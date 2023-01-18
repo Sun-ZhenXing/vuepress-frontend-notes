@@ -1,0 +1,27 @@
+{
+  "name": "vuepress-frontend-docs",
+  "version": "1.0.0",
+  "description": "Vuepress Frontend Docs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.60",
+    "vue": "^3.2.45",
+    "vuepress": "2.0.0-beta.60",
+    "vuepress-plugin-auto-catalog": "2.0.0-beta.163",
+    "vuepress-plugin-copy-code2": "2.0.0-beta.163",
+    "vuepress-plugin-md-enhance": "2.0.0-beta.163",
+    "vuepress-plugin-search-pro": "2.0.0-beta.163"
+  }
+}
