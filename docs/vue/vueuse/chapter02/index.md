@@ -7,9 +7,9 @@ description: VueUse 最佳实践
 
 [[TOC]]
 
-::: info Vue3 Ref
+::: info Vue3 Ref 对象
 
-在下文及后续文档中，`Ref` 对象指的是由 `ref()` 创建的响应式对象，也可以写作 ref，ref 的类型是 `Ref`。当宽泛地指代可能不止一个 `Ref` 类型的对象时，使用 refs。
+在下文及后续文档中，`Ref` 对象指的是由 `ref()` 创建的响应式对象，也可以写作 ref，ref 的类型是 `Ref`。当宽泛地指代可能不止一个 `Ref` 对象时，使用 refs。
 
 :::
 
