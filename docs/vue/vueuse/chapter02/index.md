@@ -87,7 +87,7 @@ scope.stop()
 
 在 Vue 中，我们使用 `setup()` 函数来构建数据和逻辑之间的连接。为了使其灵活，大部分 VueUse 函数也接受参数的 ref 版本。
 
-以 [`useTitle`](https://vueuse.org/core/useTitle/) 为例。
+下面以 [`useTitle`](https://vueuse.org/core/useTitle/) 为例，展示各种 ref 传参用法。
 
 ### 3.1 常规用法
 
