@@ -29,8 +29,7 @@ export default defineUserConfig({
     lastUpdatedText: '上次更新',
     navbar: [
     ],
-    sidebar: {
-    }
+    sidebar: 'auto',
   }),
   plugins: [
     mdEnhancePlugin({
