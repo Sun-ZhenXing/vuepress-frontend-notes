@@ -2,7 +2,7 @@
 home: true
 heroImage: /favicon.svg
 actions:
-  - text: Get Start
+  - text: 开始阅读
     link: '#前端笔记合集'
     type: primary
 features:

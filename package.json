@@ -1,7 +1,7 @@
 {
-  "name": "vuepress-frontend-docs",
+  "name": "vuepress-frontend-notes",
   "version": "1.0.0",
-  "description": "Vuepress Frontend Docs",
+  "description": "Vuepress Frontend Notes",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
