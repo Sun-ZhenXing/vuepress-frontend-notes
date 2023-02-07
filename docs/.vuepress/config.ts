@@ -56,13 +56,13 @@ export default defineUserConfig({
           replacer: ({ tag }) => {
             if (tag === 'em') return {
               tag: 'Badge',
-              attrs: { type: 'tip', vertical: 'middle' },
+              attrs: { type: 'tip' },
               content: '定义'
             }
           }
         }
       ]
-    }),
+    }, false),
     searchProPlugin({}),
     autoCatalogPlugin({}),
     copyCodePlugin({

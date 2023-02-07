@@ -1,6 +1,7 @@
-// fix: code block overflow of md-enhance in default theme
-@media (max-width: 419px) {
-  .theme-default-content {
+.theme-default-content {
+
+  // fix: code block overflow of md-enhance in default theme
+  @media (max-width: 419px) {
     div.hint-container div[class*=language-] {
       margin: 0.85rem -1rem;
     }
@@ -9,11 +10,30 @@
       margin: 0.85rem -0.8rem;
     }
   }
-}
 
-// optimize: code
-code {
-  padding: 0.25rem 0.15rem;
+  // optimize: code
+  code {
+    padding: 0.25rem 0.15rem;
+  }
+
+  p {
+
+    // optimize: image center
+    >img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    // optimize: image link icon
+    >a>img+span {
+      display: none;
+    }
+  }
+
+  // optimize: badge
+  .badge {
+    vertical-align: inherit;
+  }
 }
 
 // fix: copy katex code when selected
