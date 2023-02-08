@@ -12,7 +12,7 @@ description: 打印时显示链接地址
 这一点可以参考 Bootstrap 的实现：
 
 ```css
-@media print{
+@media print {
     a, a:visited {
         text-decoration: underline
     }
