@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-ae1b096a","path":"/notebook/js/","title":"笔记本 JS 部分","lang":"zh-CN","frontmatter":{"title":"笔记本 JS 部分","description":"笔记本 JS 部分"},"headers":[],"git":{"updatedTime":1675868983000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/js/index.md"}');export{e as data};
