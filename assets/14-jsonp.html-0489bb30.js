@@ -1,0 +1,1 @@
+import{_ as t,p as s,q as o,R as e,t as a}from"./framework-bafc524a.js";const n={},_=e("h1",{id:"_14-jsonp",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_14-jsonp","aria-hidden":"true"},"#"),a(" 14. JSONP")],-1),c=[_];function r(d,i){return s(),o("div",null,c)}const l=t(n,[["render",r],["__file","14-jsonp.html.vue"]]);export{l as default};

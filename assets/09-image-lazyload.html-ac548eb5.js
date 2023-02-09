@@ -1,0 +1,1 @@
+import{_ as a,p as t,q as o,R as e,t as _}from"./framework-bafc524a.js";const c={},r=e("h1",{id:"_9-图片懒加载",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_9-图片懒加载","aria-hidden":"true"},"#"),_(" 9. 图片懒加载")],-1),s=[r];function n(d,l){return t(),o("div",null,s)}const h=a(c,[["render",n],["__file","09-image-lazyload.html.vue"]]);export{h as default};
