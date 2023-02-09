@@ -11,4 +11,4 @@ function unique(arr) {
 /**
  * @param {Array} arr 
  */
-const unique = arr => [...new Set(arr)]
+const unique_es6 = arr => [...new Set(arr)]

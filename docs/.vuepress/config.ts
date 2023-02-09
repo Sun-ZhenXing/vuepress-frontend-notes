@@ -60,6 +60,16 @@ export default defineUserConfig({
               content: '定义'
             }
           }
+        },
+        {
+          matcher: /@note:.+/,
+          replacer: ({ tag, content }) => {
+            if (tag === 'em') return {
+              tag: 'Badge',
+              attrs: { type: 'warning' },
+              content: content.substring(6)
+            }
+          }
         }
       ]
     }, false),
