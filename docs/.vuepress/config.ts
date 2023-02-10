@@ -29,7 +29,15 @@ export default defineUserConfig({
     lastUpdatedText: '上次更新',
     navbar: [
     ],
-    sidebar: 'auto',
+    sidebar: {
+      '/nuxt-tutorial/': [
+        '/nuxt-tutorial/chapter01/',
+        '/nuxt-tutorial/chapter02/',
+        '/nuxt-tutorial/chapter03/',
+        '/nuxt-tutorial/chapter04/',
+        '/nuxt-tutorial/chapter05/',
+      ]
+    },
   }),
   plugins: [
     mdEnhancePlugin({
