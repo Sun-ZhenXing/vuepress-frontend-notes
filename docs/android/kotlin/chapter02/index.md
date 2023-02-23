@@ -374,7 +374,7 @@ fun foo() {
 
 或者使用带 `fun` 的匿名函数：
 
-```
+```kt
 fun foo() {
     ints.forEach(fun(value: Int) {
         if (value == 0) return

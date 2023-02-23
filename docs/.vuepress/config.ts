@@ -36,6 +36,11 @@ export default defineUserConfig({
         '/nuxt-tutorial/chapter03/',
         '/nuxt-tutorial/chapter04/',
         '/nuxt-tutorial/chapter05/',
+      ],
+      '/android/kotlin/': [
+        '/android/kotlin/chapter01/',
+        '/android/kotlin/chapter02/',
+        '/android/kotlin/chapter03/',
       ]
     },
   }),
