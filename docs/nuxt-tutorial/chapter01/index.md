@@ -46,6 +46,10 @@ Nuxt3 即同构渲染框架，帮助我们快速开发同构渲染页面。
 
 ## 1.4 Nuxt3 用于？
 
+![](./../images/app.svg)
+
+> 图片来源于：<https://nuxt.com/docs/getting-started/views>。
+
 Nuxt3 是基于 Vue3 的混合式框架，用于解决：
 
 - 首屏渲染慢的问题
