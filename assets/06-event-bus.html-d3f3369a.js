@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as s,R as e,t as _}from"./framework-546207d5.js";const c={},n=e("h1",{id:"_6-事件总线",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_6-事件总线","aria-hidden":"true"},"#"),_(" 6. 事件总线")],-1),r=[n];function o(d,i){return a(),s("div",null,r)}const l=t(c,[["render",o],["__file","06-event-bus.html.vue"]]);export{l as default};

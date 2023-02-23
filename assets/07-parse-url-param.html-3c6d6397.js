@@ -1,0 +1,1 @@
+import{_ as a,p as r,q as t,R as e,t as s}from"./framework-546207d5.js";const _={},c=e("h1",{id:"_7-解析-url-参数",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_7-解析-url-参数","aria-hidden":"true"},"#"),s(" 7. 解析 URL 参数")],-1),o=[c];function n(l,d){return r(),t("div",null,o)}const h=a(_,[["render",n],["__file","07-parse-url-param.html.vue"]]);export{h as default};

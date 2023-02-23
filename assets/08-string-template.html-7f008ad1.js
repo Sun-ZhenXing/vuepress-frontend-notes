@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as r,R as e,t as s}from"./framework-546207d5.js";const _={},c=e("h1",{id:"_8-字符串模板",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_8-字符串模板","aria-hidden":"true"},"#"),s(" 8. 字符串模板")],-1),n=[c];function o(d,i){return a(),r("div",null,n)}const h=t(_,[["render",o],["__file","08-string-template.html.vue"]]);export{h as default};

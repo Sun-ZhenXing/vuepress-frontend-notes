@@ -1,1 +1,0 @@
-import{_ as t,p as a,q as c,R as e,t as n}from"./framework-bafc524a.js";const r={},o=e("h1",{id:"_13-偏函数",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_13-偏函数","aria-hidden":"true"},"#"),n(" 13. 偏函数")],-1),_=[o];function s(i,d){return a(),c("div",null,_)}const h=t(r,[["render",s],["__file","13-partial-function.html.vue"]]);export{h as default};

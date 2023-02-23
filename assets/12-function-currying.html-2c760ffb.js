@@ -1,1 +1,0 @@
-import{_ as t,p as n,q as r,R as e,t as c}from"./framework-bafc524a.js";const a={},o=e("h1",{id:"_12-函数柯里化",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_12-函数柯里化","aria-hidden":"true"},"#"),c(" 12. 函数柯里化")],-1),_=[o];function s(i,d){return n(),r("div",null,_)}const l=t(a,[["render",s],["__file","12-function-currying.html.vue"]]);export{l as default};

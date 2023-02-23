@@ -1,1 +1,0 @@
-import{_ as t,p as r,q as s,R as e,t as o}from"./framework-bafc524a.js";const a={},_=e("h1",{id:"_24-实现-promise",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_24-实现-promise","aria-hidden":"true"},"#"),o(" 24. 实现 Promise")],-1),c=[_];function n(i,m){return r(),s("div",null,c)}const l=t(a,[["render",n],["__file","24-implement-promise.html.vue"]]);export{l as default};

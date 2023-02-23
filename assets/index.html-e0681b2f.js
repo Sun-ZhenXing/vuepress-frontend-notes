@@ -1,1 +1,0 @@
-import{_ as a,M as o,p as n,q as c,N as r,R as e,t as s}from"./framework-bafc524a.js";const _={},d=e("h1",{id:"nuxt3-教程",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#nuxt3-教程","aria-hidden":"true"},"#"),s(" Nuxt3 教程")],-1);function l(i,u){const t=o("AutoCatalog");return n(),c("div",null,[d,r(t)])}const h=a(_,[["render",l],["__file","index.html.vue"]]);export{h as default};

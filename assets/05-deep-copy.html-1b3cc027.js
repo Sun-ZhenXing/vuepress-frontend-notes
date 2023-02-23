@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as c,R as e,t as o}from"./framework-546207d5.js";const _={},r=e("h1",{id:"_5-深拷贝",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_5-深拷贝","aria-hidden":"true"},"#"),o(" 5. 深拷贝")],-1),s=[r];function n(d,i){return a(),c("div",null,s)}const l=t(_,[["render",n],["__file","05-deep-copy.html.vue"]]);export{l as default};
