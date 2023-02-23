@@ -14,15 +14,15 @@ description: 打印时显示链接地址
 ```css
 @media print {
     a, a:visited {
-        text-decoration: underline
+        text-decoration: underline;
     }
 
     a[href]:after {
-        content: " (" attr(href) ")"
+        content: " (" attr(href) ")";
     }
 
     abbr[title]:after {
-        content: " (" attr(title) ")"
+        content: " (" attr(title) ")";
     }
 }
 ```
