@@ -6,6 +6,7 @@ class Animal {
         return this.name;
     }
 }
+
 class Dog extends Animal {
     constructor(name, age) {
         super(name);
