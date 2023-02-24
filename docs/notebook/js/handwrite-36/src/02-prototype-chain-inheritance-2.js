@@ -1,10 +1,12 @@
 function Animal(name) {
-    this.name = name
+    this.name = name;
     this.getName = function () {
-        return this.name
-    }
+        return this.name;
+    };
 }
+
 function Dog(name) {
-    Animal.call(this, name)
+    Animal.call(this, name);
 }
-Dog.prototype = new Animal()
+
+Dog.prototype = new Animal();

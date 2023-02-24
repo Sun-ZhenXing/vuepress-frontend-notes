@@ -2,8 +2,8 @@
  * @param {any[]} arr
  */
 function flatten(arr) {
-    var result = [];
-    for (var i = 0, len = arr.length; i < len; i++) {
+    let result = [];
+    for (let i = 0, len = arr.length; i < len; i++) {
         if (Array.isArray(arr[i])) {
             result = result.concat(flatten(arr[i]))
         } else {
