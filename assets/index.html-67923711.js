@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-36b886c6","path":"/notebook/sass/","title":"Sass 笔记","lang":"zh-CN","frontmatter":{"title":"Sass 笔记","description":"Sass 笔记"},"headers":[],"git":{"updatedTime":1677409430000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/sass/index.md"}');export{t as data};

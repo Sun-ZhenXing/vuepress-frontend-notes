@@ -1,0 +1,1 @@
+import{_ as t,M as s,p as o,q as n,N as c,R as e,t as r}from"./framework-546207d5.js";const _={},d=e("h1",{id:"sass-笔记",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#sass-笔记","aria-hidden":"true"},"#"),r(" Sass 笔记")],-1);function l(i,h){const a=s("AutoCatalog");return o(),n("div",null,[d,c(a)])}const m=t(_,[["render",l],["__file","index.html.vue"]]);export{m as default};
