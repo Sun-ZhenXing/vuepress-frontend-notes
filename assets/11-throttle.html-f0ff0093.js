@@ -1,1 +1,0 @@
-import{_ as t,p as a,q as r,R as e,t as o}from"./framework-546207d5.js";const _={},c=e("h1",{id:"_11-函数节流",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_11-函数节流","aria-hidden":"true"},"#"),o(" 11. 函数节流")],-1),s=[c];function n(d,h){return a(),r("div",null,s)}const i=t(_,[["render",n],["__file","11-throttle.html.vue"]]);export{i as default};
