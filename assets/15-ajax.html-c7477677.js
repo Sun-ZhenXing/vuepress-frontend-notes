@@ -1,1 +1,0 @@
-import{_ as a,p as t,q as _,R as e,t as c}from"./framework-546207d5.js";const r={},s=e("h1",{id:"_15-ajax",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_15-ajax","aria-hidden":"true"},"#"),c(" 15. Ajax")],-1),o=[s];function n(d,i){return t(),_("div",null,o)}const l=a(r,[["render",n],["__file","15-ajax.html.vue"]]);export{l as default};
