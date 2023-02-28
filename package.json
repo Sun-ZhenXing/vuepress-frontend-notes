@@ -20,16 +20,13 @@
   "author": "Alex",
   "license": "ISC",
   "devDependencies": {
-    "@algolia/client-search": "^4.14.3",
     "@vuepress/client": "2.0.0-beta.60",
     "@vuepress/plugin-docsearch": "2.0.0-beta.60",
     "vue": "^3.2.47",
     "vuepress": "2.0.0-beta.60",
     "vuepress-plugin-auto-catalog": "2.0.0-beta.182",
     "vuepress-plugin-copy-code2": "2.0.0-beta.182",
-    "vuepress-plugin-md-enhance": "2.0.0-beta.182"
-  },
-  "dependencies": {
-    "pnpm": "^7.28.0"
+    "vuepress-plugin-md-enhance": "2.0.0-beta.182",
+    "@algolia/client-search": "^4.14.3"
   }
 }
