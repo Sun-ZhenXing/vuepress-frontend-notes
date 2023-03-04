@@ -1,0 +1,1 @@
+const i=JSON.parse('{"key":"v-4c03dc9a","path":"/android/basic/","title":"Android 基础","lang":"zh-CN","frontmatter":{"title":"Android 基础","description":"Android 基础"},"headers":[],"git":{"updatedTime":1677902387000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"android/basic/index.md"}');export{i as data};
