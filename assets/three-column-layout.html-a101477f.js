@@ -1,1 +1,0 @@
-import{_ as t,p as a,q as o,R as e,t as r}from"./framework-546207d5.js";const c={},n=e("h2",{id:"利用flex实现",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#利用flex实现","aria-hidden":"true"},"#"),r(" 利用flex实现")],-1),s=[n];function l(_,d){return a(),o("div",null,s)}const f=t(c,[["render",l],["__file","three-column-layout.html.vue"]]);export{f as default};
