@@ -3,13 +3,11 @@
  * @param {number} wait
  */
 function throttle(func, wait) {
-  var context, args;
-  var previous = 0;
-
+  let previous = 0;
   return function () {
-    var now = new Date().getTime();
-    context = this;
-    args = arguments;
+    let now = new Date().getTime();
+    let context = this;
+    let args = arguments;
     if (now - previous > wait) {
       func.apply(context, args);
       previous = now;
