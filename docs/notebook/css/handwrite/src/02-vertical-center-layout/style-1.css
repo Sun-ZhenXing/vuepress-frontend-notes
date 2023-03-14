@@ -1,0 +1,58 @@
+/* 
+实现不定宽高情况
+*/
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(191, 215, 236);
+}
+
+.content {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(106, 185, 159);
+}
+
+/* 
+    使用positin+transform
+*/
+.father {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 使用position+margin:auto */
+
+.father {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* 使用flex布局 */
+.father {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 使用grid布局*/
+.father {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
