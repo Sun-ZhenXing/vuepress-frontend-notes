@@ -1,8 +1,3 @@
----
-title: 开始使用 VueUse
-description: 开始使用 VueUse
----
-
 # 开始使用 VueUse
 
 ::: warning 官方文档

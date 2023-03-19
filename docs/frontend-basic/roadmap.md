@@ -1,8 +1,3 @@
----
-title: 前端路线图
-description: 前端路线图
----
-
 # 前端路线图
 
 ```mermaid

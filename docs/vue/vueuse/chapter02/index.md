@@ -1,8 +1,3 @@
----
-title: VueUse 最佳实践
-description: VueUse 最佳实践
----
-
 # VueUse 最佳实践
 
 [[TOC]]

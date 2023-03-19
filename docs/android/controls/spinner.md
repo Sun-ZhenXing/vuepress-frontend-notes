@@ -1,8 +1,3 @@
----
-title: Spinner
-description: Spinner
----
-
 # Spinner
 
 [[TOC]]

@@ -1,8 +1,3 @@
----
-title: 第 1 章：Sass 语法快速入门
-description: 第 1 章：Sass 语法快速入门
----
-
 # 1. Sass 语法快速入门
 
 [[TOC]]

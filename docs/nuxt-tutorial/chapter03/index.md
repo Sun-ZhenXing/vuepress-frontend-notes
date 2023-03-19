@@ -1,8 +1,3 @@
----
-title: 第 03 章：Nuxt3 路由
-description: 介绍 Nuxt3 的路由
----
-
 # 3. Nuxt3 路由
 
 [[TOC]]

@@ -1,8 +1,3 @@
----
-title: TensorFlow Lite 入门示例
-description: TensorFlow Lite 入门示例
----
-
 # TensorFlow Lite 入门示例
 
 ## 1. Android 识别鲜花类型

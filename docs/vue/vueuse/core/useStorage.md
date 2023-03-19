@@ -1,8 +1,3 @@
----
-title: useStorage
-description: useStorage
----
-
 # [useStorage](https://vueuse.org/core/useStorage/)
 
 [[TOC]]

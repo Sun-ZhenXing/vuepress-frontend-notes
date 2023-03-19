@@ -1,8 +1,3 @@
----
-title: 第 3 章：Kotlin 面向对象
-description: 第 3 章：Kotlin 面向对象
----
-
 # 3. Kotlin 面向对象
 
 [[TOC]]

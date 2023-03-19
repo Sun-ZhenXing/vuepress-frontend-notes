@@ -1,11 +1,4 @@
----
-title: CSS 预处理器
-description: CSS 预处理器
----
-
 # CSS 预处理器
-
-[[TOC]]
 
 ## 1. 什么是 CSS 预处理器
 

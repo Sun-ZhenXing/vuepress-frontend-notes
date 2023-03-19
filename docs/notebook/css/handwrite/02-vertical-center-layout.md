@@ -1,8 +1,3 @@
----
-title: 02-垂直居中
-description: 02-CSS实现垂直居中问题
----
-
 简单搭建一下页面，搞两个盒子相互嵌套即可。
 @[code html](./src/02-vertical-center-layout/index.html)
 

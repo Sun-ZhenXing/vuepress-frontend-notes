@@ -1,8 +1,3 @@
----
-title: Axios
-description: Axios
----
-
 # Axios
 
 [[TOC]]

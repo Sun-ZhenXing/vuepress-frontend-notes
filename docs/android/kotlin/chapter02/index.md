@@ -1,8 +1,3 @@
----
-title: 第 2 章：Kotlin 语法概述
-description: 第 2 章：Kotlin 语法概述
----
-
 # 2. Kotlin 语法概述
 
 [[TOC]]

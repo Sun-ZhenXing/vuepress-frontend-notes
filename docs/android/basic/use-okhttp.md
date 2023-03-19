@@ -1,8 +1,3 @@
----
-title: 使用 okhttp 发送请求
-description: 使用 okhttp 发送请求
----
-
 # 使用 okhttp 发送请求
 
 [[TOC]]

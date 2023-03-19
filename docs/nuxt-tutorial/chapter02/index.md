@@ -1,8 +1,3 @@
----
-title: 第 02 章：开始使用 Nuxt3
-description: 创建第一个项目
----
-
 # 2. 开始使用 Nuxt3
 
 ::: info 环境要求

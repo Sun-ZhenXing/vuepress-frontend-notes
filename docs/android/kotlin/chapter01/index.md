@@ -1,8 +1,3 @@
----
-title: 第 1 章：Kotlin 入门
-description: 第 1 章：Kotlin 入门
----
-
 # 1. Kotlin 教程
 
 [[TOC]]
