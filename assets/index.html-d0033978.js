@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-e27d6378","path":"/notebook/js/handwrite-36/","title":"JS 手写 36 题","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":5}]},"filePathRelative":"notebook/js/handwrite-36/index.md"}');export{e as data};

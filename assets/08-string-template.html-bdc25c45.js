@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-10eaa878","path":"/notebook/js/handwrite-36/08-string-template.html","title":"8. 字符串模板","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":3}]},"filePathRelative":"notebook/js/handwrite-36/08-string-template.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7122e777","path":"/notebook/js/handwrite-36/14-jsonp.html","title":"14. JSONP","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":3}]},"filePathRelative":"notebook/js/handwrite-36/14-jsonp.md"}');export{t as data};

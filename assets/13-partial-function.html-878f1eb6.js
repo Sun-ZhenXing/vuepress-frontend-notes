@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-a9bc2ce4","path":"/notebook/js/handwrite-36/13-partial-function.html","title":"13. 偏函数","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":3}]},"filePathRelative":"notebook/js/handwrite-36/13-partial-function.md"}');export{t as data};

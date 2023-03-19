@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0ec091c3","path":"/frontend-basic/","title":"前端基础知识","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":2}]},"filePathRelative":"frontend-basic/index.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8a5b63f8","path":"/vue/vueuse/core/","title":"VueUse Core","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":2}]},"filePathRelative":"vue/vueuse/core/index.md"}');export{e as data};

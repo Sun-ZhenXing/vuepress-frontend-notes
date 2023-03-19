@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-4406ec80","path":"/nuxt-tutorial/chapter02/","title":"2. 开始使用 Nuxt3","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":2}]},"filePathRelative":"nuxt-tutorial/chapter02/index.md"}');export{t as data};

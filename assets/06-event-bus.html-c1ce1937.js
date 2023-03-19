@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5f26cd0f","path":"/notebook/js/handwrite-36/06-event-bus.html","title":"6. 事件总线","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":3}]},"filePathRelative":"notebook/js/handwrite-36/06-event-bus.md"}');export{e as data};

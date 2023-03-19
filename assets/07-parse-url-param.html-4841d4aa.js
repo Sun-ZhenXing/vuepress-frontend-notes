@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-be39e9b4","path":"/notebook/js/handwrite-36/07-parse-url-param.html","title":"7. 解析 URL 参数","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":4}]},"filePathRelative":"notebook/js/handwrite-36/07-parse-url-param.md"}');export{e as data};
