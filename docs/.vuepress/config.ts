@@ -119,7 +119,7 @@ export default defineUserConfig({
         }
       ]
     }, false),
-        docsearchPlugin({
+    docsearchPlugin({
       appId: 'DF0MWQNCKW',
       apiKey: '3b6438cb1895eff367c5c84c8fa50383',
       indexName: 'alexsun_blog',
@@ -171,7 +171,16 @@ export default defineUserConfig({
         },
       },
     }),
-    autoCatalogPlugin({}),
+    autoCatalogPlugin({
+      orderGetter: (page) => {
+        const number = page.title.match(/\d+/)
+        if (number) {
+          return +number[0];
+        } else {
+          return 0;
+        }
+      }
+    }),
     copyCodePlugin({
       showInMobile: true
     })
