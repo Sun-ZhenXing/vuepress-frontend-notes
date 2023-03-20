@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-380a470a","path":"/notebook/deployment/docker.html","title":"Docker 快速部署前端","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679289384000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/deployment/docker.md"}');export{e as data};
