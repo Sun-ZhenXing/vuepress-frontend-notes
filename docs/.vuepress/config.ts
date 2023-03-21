@@ -172,13 +172,13 @@ export default defineUserConfig({
       },
     }),
     autoCatalogPlugin({
-      orderGetter: (page) => {
-        const number = page.title.match(/\d+/)
-        if (number) {
-          return +number[0];
-        } else {
-          return 0;
-        }
+      orderGetter: ({ title, routeMeta }) => {
+        if (routeMeta.order) return routeMeta.order as number
+        const prefix = title.match(/^\d+. /)
+        if (prefix) return parseInt(prefix[0])
+        const suffix = title.match(/\d+$/)
+        if (suffix) return parseInt(suffix[0])
+        return 0
       }
     }),
     copyCodePlugin({
