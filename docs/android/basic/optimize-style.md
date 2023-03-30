@@ -2,7 +2,9 @@
 
 [[TOC]]
 
-## 1. 如何隐藏标题栏
+## 1. ActionBar
+
+### 1.1 如何隐藏导航栏
 
 通过更改继承的主题即可，在 `themes.xml`，默认情况下为：
 
@@ -13,6 +15,21 @@
 ```
 
 将 `DarkActionBar` 修改为 `NoActionBar` 即可。
+
+### 1.2 去除导航栏阴影
+
+在 `themes.xml` 中添加：
+
+```xml
+<item name="android:windowContentOverlay">@null</item>
+```
+
+并在对应的 Activity 的 `onCreate` 函数中添加：
+
+```kt
+// remove actionbar shadow
+supportActionBar?.elevation = 0.0f
+```
 
 ## 2. 如何自定义图标
 
@@ -29,3 +46,14 @@ Android Stdio 会自动将 SVG 转换为资源文件，但启动时可能报错�
 将上面一行代码粘贴到报错资源的第一行即可。
 
 :::
+
+## 3. EditText
+
+### 3.1 常见属性
+
+| 属性                                 | 作用         |
+| ------------------------------------ | ------------ |
+| `android:background="@null"`         | 去除下划线   |
+| `android:cursorVisible="false"`      | 隐藏光标     |
+| `android:hint="@string/search_hint"` | 设置提示文字 |
+| `android:inputType="text"`           | 设置输入类型 |
