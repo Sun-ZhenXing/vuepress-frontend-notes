@@ -60,3 +60,74 @@ class SpinnerActivity : Activity(), AdapterView.OnItemSelectedListener {
     }
 }
 ```
+
+## 4. 在 Activity 中使用
+
+使用 `R.array.array_list` 指定选项：
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_list">
+        <item>项目 1</item>
+        <item>项目 2</item>
+        <item>项目 3</item>
+    </string-array>
+</resources>
+```
+
+在 `onCreate` 中指定：
+
+```kt
+val spinner: Spinner = findViewById(R.id.spinner)
+ArrayAdapter.createFromResource(
+    this,
+    R.array.array_list,
+    android.R.layout.simple_spinner_item
+).also { adapter ->
+    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+    spinner.adapter = adapter
+}
+spinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
+    override fun onItemSelected(
+        parent: AdapterView<*>,
+        view: View?,
+        position: Int,
+        id: Long
+    ) {
+    }
+
+    override fun onNothingSelected(parent: AdapterView<*>?) {
+    }
+}
+```
+
+## 5. 在 Fragment 中使用
+
+使用 `R.array.array_list` 指定选项，在 `onCreateView` 中指定：
+
+```kt
+val spinner: Spinner = binding.spinnerName
+this.context?.let {
+    ArrayAdapter.createFromResource(
+        it,
+        R.array.array_list,
+        android.R.layout.simple_spinner_item
+    ).also { adapter ->
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner.adapter = adapter
+    }
+}
+spinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
+    override fun onItemSelected(
+        parent: AdapterView<*>,
+        view: View?,
+        position: Int,
+        id: Long
+    ) {
+    }
+
+    override fun onNothingSelected(parent: AdapterView<*>?) {
+    }
+}
+```

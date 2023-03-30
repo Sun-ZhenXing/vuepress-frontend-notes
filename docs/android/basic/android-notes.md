@@ -4,7 +4,7 @@
 
 ## 1. Maven 镜像仓库
 
-`settings.gradle` 内可设置镜像仓库。
+部分包无法下载，需要使用镜像仓库。在 `settings.gradle` 内可设置镜像仓库。
 
 ```gradle
 repositories {
@@ -18,27 +18,35 @@ repositories {
 }
 ```
 
-## 2. 使用实体 Android 机调试开发
+## 2. 调试开发
+
+### 2.1 使用实体机调试开发
 
 1. 开始 USB 调试
 2. 授权 ADB 调试
 3. 编译到 Android 手机即可执行
 4. （可选）使用 `scrcpy` 进行投屏
 
-## 附录 A：Sync 时错误
+```bash
+adb devices
 
-Sync 时错误：`Caused by: org.gradle.api.internal.plugins.PluginApplicationException: Failed to apply`。
-
-解决方法：在项目的 `gradle.properties` 中加入下面的代码。
-
-```properties
-android.overridePathCheck=true
+# 使用无线调试
+adb tcpip 5555
+adb connect <ip>:5555
 ```
 
-## 附录 B：调试失败
+### 2.2 使用模拟器调试开发
 
-无法启动 ADB 服务，持续重启 ADB demand。
+请搜索模拟器的创建步骤，但模拟器问题较多，速度较慢，好处是可指定更多版本。[^1]
 
-解决方法：如果报错 `Adb connection Error: 远程主机强迫关闭了一个现有的连接。` 就是端口被占用，可能已经启动了另一个 ADB。
+[^1]: Android Studio 模拟器使用 QEMU 虚拟机。
 
-如果出现 `"Cannot reach ADB server, attempting to reconnect."`，则表明 WiFi 调试与 ADB 冲突，需要搜索并关闭 `Enable adb mDNS for wireless debugging`。
+### 2.3 使用 WSA 调试开发
+
+请参考 [使用 Windows 安卓子系统](https://blog.alexsun.top/posts/envs/windows-subsystem-for-android.html) 进行配置。
+
+## 3. 资源网站
+
+- [Android Developers](https://developer.android.com/)，需要外网
+- [Android Developers 中文](https://developer.android.google.cn/)
+- [Android 图标库](https://fonts.google.com/icons?hl=zh-cn&icon.platform=android)，需要外网
