@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as r,Q as e,t as o}from"./framework-7b83bea1.js";const _={},c=e("h1",{id:"_4-编辑图片并保存",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_4-编辑图片并保存","aria-hidden":"true"},"#"),o(" 4. 编辑图片并保存")],-1),s=[c];function n(d,i){return a(),r("div",null,s)}const l=t(_,[["render",n],["__file","4-image-editor.html.vue"]]);export{l as default};

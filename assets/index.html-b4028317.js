@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5291b9fa","path":"/notebook/other/soybean-admin/","title":"soybean-admin 学习笔记","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1680534796000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/other/soybean-admin/index.md"}');export{e as data};

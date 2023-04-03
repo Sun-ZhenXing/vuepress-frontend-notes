@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as s,Q as e,t as _}from"./framework-7b83bea1.js";const c={},r=e("h1",{id:"_2-获取并操作文件对象",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_2-获取并操作文件对象","aria-hidden":"true"},"#"),_(" 2. 获取并操作文件对象")],-1),o=[r];function n(d,i){return a(),s("div",null,o)}const h=t(c,[["render",n],["__file","2-get-files.html.vue"]]);export{h as default};
