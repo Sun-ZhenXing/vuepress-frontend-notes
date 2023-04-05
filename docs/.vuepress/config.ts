@@ -89,6 +89,13 @@ export default defineUserConfig({
       vPre: true,
       tabs: true,
       codetabs: true,
+      include: {
+        resolvePath: file => {
+          if (file.startsWith('@'))
+            return file.replace('@', path.resolve(__dirname, '.'))
+          return file
+        },
+      },
       align: true,
       attrs: true,
       sub: true,

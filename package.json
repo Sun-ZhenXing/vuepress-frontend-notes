@@ -20,7 +20,7 @@
   "author": "Alex",
   "license": "ISC",
   "devDependencies": {
-    "@algolia/client-search": "^4.16.0",
+    "@algolia/client-search": "^4.17.0",
     "@vuepress/client": "2.0.0-beta.61",
     "@vuepress/plugin-docsearch": "2.0.0-beta.61",
     "@vuepress/utils": "2.0.0-beta.61",

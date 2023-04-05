@@ -124,7 +124,7 @@ cd soybean-admin
 pnpm i
 ```
 
-*@note:报错指南* 如果不安装 **TypeScript Vue Plugin** 插件，在打开一些源文件时报告无法解析 Vue 文件，创建 `src/env.d.ts` 即可，文件名可以任意写，内容是：
+*@note:报错指南* 如果不安装 **TypeScript Vue Plugin** 插件，在打开一些源文件时报告无法解析 Vue 文件，创建 `src/env.d.ts` 即可，文件名（`env`）可以换为任意名称，内容是：
 
 ```ts
 declare module '*.vue' {
