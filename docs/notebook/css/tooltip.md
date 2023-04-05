@@ -11,12 +11,21 @@
 
 ::: details 查看源码
 
+```html
+<button class="action-button primary tooltip tooltip-left" data-tooltip="提示">左边</button>
+<button class="action-button primary tooltip tooltip-right" data-tooltip="提示">右边</button>
+<button class="action-button primary tooltip" data-tooltip="提示">上面</button>
+<button class="action-button primary tooltip tooltip-bottom" data-tooltip="提示">下面</button>
+```
+
+Scss 代码：
+
 ```scss
 @include(@/styles/tooltip.scss)
 ```
 :::
 
-另外，有一些提示有边角，例如 [这篇博客：A step-by-step guide to making pure-CSS tooltips](https://www.freecodecamp.org/news/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346) 所展示的那样，在本文中实现了一个最基本的边角提示。
+另外，有一些提示有边角，例如 [A step-by-step guide to making pure-CSS tooltips](https://www.freecodecamp.org/news/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346) 一文所展示的那样，在本文中实现了一个最基本的边角提示。
 
 边角使用 `::before` 表现，核心样式是：
 - `border-bottom-color`，设置边角的颜色
