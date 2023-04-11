@@ -33,53 +33,7 @@ export default defineUserConfig({
     lastUpdatedText: '上次更新',
     navbar: [
     ],
-    sidebar: {
-      '/nuxt-tutorial/': [
-        '/nuxt-tutorial/chapter01/',
-        '/nuxt-tutorial/chapter02/',
-        '/nuxt-tutorial/chapter03/',
-        '/nuxt-tutorial/chapter04/',
-        '/nuxt-tutorial/chapter05/',
-      ],
-      '/android/kotlin/': [
-        '/android/kotlin/chapter01/',
-        '/android/kotlin/chapter02/',
-        '/android/kotlin/chapter03/',
-      ],
-      '/notebook/js/handwrite-36/': [
-        {
-          text: 'JS 手写 36 题',
-          link: '/notebook/js/handwrite-36/',
-          collapsible: true,
-          children: [
-            '01-data-type-determination',
-            '02-prototype-chain-inheritance',
-            '03-array-de-duplication',
-            '04-flatten-arrays',
-            '05-deep-copy',
-            '06-event-bus',
-            '07-parse-url-param',
-            '08-string-template',
-            '09-image-lazyload',
-            '10-debounce',
-            '11-throttle',
-            '12-function-currying',
-            '13-partial-function',
-            '14-jsonp',
-            '15-ajax',
-            '16-implement-array-prototype-method',
-            '17-implement-function-prototype-method',
-            '18-implement-new',
-            '19-implement-instanceof',
-            '20-implement-object-create',
-            '21-implement-object-assign',
-            '22-implement-json-stringify',
-            '23-implement-json-parse',
-            '24-implement-promise',
-          ]
-        }
-      ]
-    },
+    sidebar: 'auto',
   }),
   plugins: [
     mdEnhancePlugin({
