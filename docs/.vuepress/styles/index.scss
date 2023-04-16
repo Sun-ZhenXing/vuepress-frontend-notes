@@ -34,6 +34,17 @@
   .badge {
     vertical-align: inherit;
   }
+
+  // fix: footnote line height
+  hr.footnotes-sep {
+    margin-top: 2.2rem;
+  }
+
+  // fix: footnote cover content
+  section.footnotes .footnote-item {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 // fix: copy katex code when selected

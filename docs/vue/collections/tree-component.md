@@ -36,9 +36,7 @@ pnpm add font-awesome
 
 在 Vue 的 `<template>` 中使用自身的名称即可实现树形组件。
 
-```vue
-@include(@/components/TreeTest.vue)
-```
+@[code vue](@/components/TreeTest.vue)
 
 直接使用 `TreeTest` 组件即可：
 
@@ -58,9 +56,7 @@ import data from '@/data/test-tree.json'
 
 其中数据如下：
 
-```json
-@include(@/data/test-tree.json)
-```
+@[code json](@/data/test-tree.json)
 
 ## 3. 递归修改名称
 

@@ -43,6 +43,4 @@ text-overflow: ellipsis;
 import TextOverflow from '@/components/TextOverflow.vue'
 </script>
 
-```vue
-@include(@/components/TextOverflow.vue)
-```
+@[code vue](@/components/TextOverflow.vue)

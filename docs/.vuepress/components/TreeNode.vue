@@ -1,11 +1,19 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 type Node = {
+  // 名称
   name: string
+  // 标签
   label?: string
+  // 子节点
   children?: Node[]
+  // 注释
   note?: string
+  // 是否默认显示
+  show?: boolean
+  // 是否固定
+  fixed?: boolean
 }
 
 const props = defineProps<{
@@ -13,15 +21,25 @@ const props = defineProps<{
 }>()
 
 const isShow = ref<boolean[]>([])
+
+/**
+ * 切换显示状态
+ * @param i 第几个节点
+ */
+const toggle = (i: number) => {
+  if (props.items[i].fixed) return
+  isShow.value[i] = !isShow.value[i]
+  console.log(props.items[i])
+}
 </script>
 
 <template>
   <ul>
     <li v-for="item, i in props.items" :key="item.name">
-      <div class="wrapper" :class="{ tooltip: item.note }" @click="isShow[i] = !isShow[i]"
+      <div class="wrapper" :class="{ tooltip: item.note }" @click="toggle(i)"
         :data-tooltip="item.name + ': ' + item.note">
         <i class="fa" aria-hidden="true" v-if="item.children && item.children.length"
-          :class="isShow[i] ? 'fa-angle-down' : 'fa-angle-right'"></i>
+          :class="(item.show !== isShow[i]) ? 'fa-angle-down' : 'fa-angle-right'"></i>
         <i v-else class="fa fa-file-o" aria-hidden="true"></i>
         <span class="name">{{ item.name }}</span>
         <span class="label" v-if="item.label">
@@ -30,7 +48,7 @@ const isShow = ref<boolean[]>([])
         </span>
       </div>
       <div class="sub-tree" v-if="item.children && item.children.length">
-        <TreeNode v-show="isShow[i]" :items="item.children" />
+        <TreeNode v-show="item.show !== isShow[i]" :items="item.children" />
       </div>
     </li>
   </ul>

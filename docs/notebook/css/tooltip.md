@@ -20,9 +20,8 @@
 
 Scss 代码：
 
-```scss
-@include(@/styles/tooltip.scss)
-```
+@[code scss](@/styles/tooltip.scss)
+
 :::
 
 另外，有一些提示有边角，例如 [A step-by-step guide to making pure-CSS tooltips](https://www.freecodecamp.org/news/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346) 一文所展示的那样，在本文中实现了一个最基本的边角提示。

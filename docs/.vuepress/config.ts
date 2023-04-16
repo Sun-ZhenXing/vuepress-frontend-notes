@@ -22,7 +22,12 @@ export default defineUserConfig({
   markdown: {
     code: {
       lineNumbers: 10
-    }
+    },
+    importCode: {
+      handleImportPath: str => str.replace(/^@/, path.resolve(
+        __dirname, '.',
+      )),
+    },
   },
   theme: defaultTheme({
     logo: '/favicon.svg',
