@@ -8,17 +8,17 @@
 
 ```css
 @media print {
-    a, a:visited {
-        text-decoration: underline;
-    }
+  a, a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 }
 ```
 
@@ -26,8 +26,8 @@
 
 ```css
 @media print {
-    a[href]:after {
-        content: "";
-    }
+  a[href]:after {
+    content: "";
+  }
 }
 ```

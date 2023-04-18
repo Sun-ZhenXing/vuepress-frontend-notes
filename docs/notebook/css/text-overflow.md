@@ -1,4 +1,4 @@
-# 文本溢出行为
+# text-overflow
 
 [[TOC]]
 
