@@ -1,4 +1,3 @@
-import process from 'node:process'
 import { defineUserConfig, defaultTheme } from 'vuepress'
 import { getDirname, path } from '@vuepress/utils'
 import { mdEnhancePlugin } from 'vuepress-plugin-md-enhance'
@@ -7,7 +6,7 @@ import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { autoCatalogPlugin } from 'vuepress-plugin-auto-catalog'
 
 const __dirname = getDirname(import.meta.url)
-const isProd = process.env.NODE_ENV === 'production'
+const ROOT_PATH = path.resolve(__dirname, '.')
 const USER_NAME = 'Sun-ZhenXing'
 const BASE_PATH = '/vuepress-frontend-notes/'
 
@@ -24,9 +23,7 @@ export default defineUserConfig({
       lineNumbers: 10
     },
     importCode: {
-      handleImportPath: str => str.replace(/^@/, path.resolve(
-        __dirname, '.',
-      )),
+      handleImportPath: str => str.replace(/^@/, ROOT_PATH),
     },
   },
   theme: defaultTheme({
@@ -54,7 +51,7 @@ export default defineUserConfig({
       include: {
         resolvePath: file => {
           if (file.startsWith('@'))
-            return file.replace('@', path.resolve(__dirname, '.'))
+            return file.replace('@', ROOT_PATH)
           return file
         },
       },
@@ -156,12 +153,9 @@ export default defineUserConfig({
     }),
     copyCodePlugin({
       showInMobile: true
-    })
+    }),
   ],
   alias: {
-    '@': path.resolve(
-      __dirname,
-      '.',
-    )
+    '@': ROOT_PATH,
   },
 })
