@@ -9,7 +9,7 @@
 我们需要在项目添加一个 `Dockerfile` 文件，内容如下：
 
 ```dockerfile
-FROM nginx:1.23.3-alpine
+FROM nginx:1.24.0-alpine3.17-slim
 COPY $PWD/dist/ /usr/share/nginx/html/
 
 EXPOSE 80
@@ -25,15 +25,12 @@ docker build -t my_test:v1 .
 构建成功后运行容器：
 
 ```bash
-docker run -itd \
-    --name test \
-    -p 80:80 \
-    my_test:v1
+docker run -itd -p 80:80 my_test:v1
 ```
 
 打开 <http://localhost/> 即可看到内容。
 
-## 2. 编译加部署
+## 2. 编译并部署
 
 在同一个 `Dockerfile` 文件中，我们可以使用两个镜像来完成编译和部署。
 
@@ -43,40 +40,13 @@ docker run -itd \
 <script>window.location.href = '/docs/'</script>
 ```
 
-下面，我们构建一个基于 VuePress 的文档项目（就像本项目一样），使用 `pnpm` 编译。
+这样我们就会默认被定向到 `/docs/` 目录下，也可以使用 `nginx.conf` 文件来配置。
 
-```dockerfile
-# Builder
-FROM node:18.15-bullseye as builder
+下面，我们构建一个基于 VuePress 的文档项目，默认页面是 `/vuepress-frontend-notes/`（即你现在正在看到的项目），使用 `pnpm` 编译。
 
-WORKDIR /app
+@[code dockerfile](@/../../Dockerfile)
 
-COPY *.* ./
-COPY docs/ ./docs/
-
-RUN npm install -g pnpm && \
-    pnpm install && \
-    pnpm build
-
-# Nginx Server
-FROM nginx:1.23.3-alpine
-
-ENV TZ=Asia/Shanghai \
-    LANG=C.UTF-8 \
-    LANGUAGE=C.UTF-8 \
-    LC_ALL=C.UTF-8
-
-WORKDIR /usr/share/nginx/html/docs/
-
-RUN echo "<script>window.location.href = '/docs/'</script>" > /usr/share/nginx/html/index.html
-COPY --from=builder /app/docs/.vuepress/dist/ ./
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
-```
-
-你可以克隆本项目，然后将上述内容保存为 `Dockerfile` 放到项目的根目录，然后运行：
+你可以克隆本项目，即上放的 GitHub 地址，本项目提供了上述 `Dockerfile` 文件，你可以构建镜像：
 
 ```bash
 docker build -t my_docs:v1 .
@@ -85,10 +55,7 @@ docker build -t my_docs:v1 .
 构建成功后运行容器：
 
 ```bash
-docker run -itd \
-    --name test \
-    -p 80:80 \
-    my_docs:v1
+docker run -itd -p 80:80 my_docs:v1
 ```
 
-打开 <http://localhost/> 即可看到被重定向到 <http://localhost/docs/>，可以找到本页面的内容。
+打开 <http://localhost/> 即可看到被重定向到 <http://localhost/vuepress-frontend-notes/>，可以找到本页面的内容。
