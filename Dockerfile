@@ -7,6 +7,8 @@ COPY *.* ./
 COPY Dockerfile ./
 COPY docs/ ./docs/
 
+ENV NODE_OPTIONS=--max-old-space-size=4096
+
 RUN npm install -g pnpm && \
     pnpm install && \
     pnpm build

@@ -6,18 +6,18 @@
 
 ## 🛠️ Build Docs | 构建文档
 
-使用 `pnpm` 构建 | Build with `pnpm`:
+Build with `pnpm` | 使用 `pnpm` 构建:
 
 ```bash
 pnpm i
 pnpm build
 ```
 
-使用 Docker 构建 | Build with Docker:
+Build with Docker | 使用 Docker 构建:
 
 ```bash
-docker build -t my_docs:v1 .
-docker run -itd -p 80:80 my_docs:v1
+docker build -t vuepress-frontend-notes .
+docker run -itd -p 80:80 vuepress-frontend-notes
 ```
 
 ## 📜 License | 开源协议
