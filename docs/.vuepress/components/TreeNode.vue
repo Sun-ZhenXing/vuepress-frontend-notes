@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 
 type Node = {
   // 名称
@@ -106,6 +106,8 @@ li {
 }
 
 // Ref: https://picturepan2.github.io/spectre/components/tooltips.html
+// Different from the ../styles/tooltip.scss
+// If we can split this style and use common style, it will be better.
 .tooltip {
   position: relative;
 

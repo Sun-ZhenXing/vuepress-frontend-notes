@@ -1,5 +1,9 @@
 # 实现 Tooltip
 
+[[TOC]]
+
+## 1. 基本 Tooltip
+
 本文直接参考 [Spectre.css](https://github.com/picturepan2/spectre/blob/master/src/_tooltips.scss) 的实现，其示例如下。
 
 <div style="display: flex; justify-content: center;">
@@ -8,6 +12,19 @@
 <button class="action-button primary tooltip" data-tooltip="提示">上面</button>
 <button class="action-button primary tooltip tooltip-bottom" data-tooltip="提示">下面</button>
 </div>
+
+<style lang="scss" scoped>
+@import "@/styles/tooltip.scss";
+button {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand);
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+}
+</style>
 
 ::: details 查看源码
 
@@ -24,24 +41,15 @@ Scss 代码：
 
 :::
 
+## 2. 带有边角的 Tooltip
+
 另外，有一些提示有边角，例如 [A step-by-step guide to making pure-CSS tooltips](https://www.freecodecamp.org/news/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346) 一文所展示的那样，在本文中实现了一个最基本的边角提示。
 
 边角使用 `::before` 表现，核心样式是：
 - `border-bottom-color`，设置边角的颜色
 - `margin-left`，设置边角的大小，为负值就会出现三角形
 
-<style lang="scss" scoped>
-@import "@/styles/tooltip.scss";
-button {
-    background-color: var(--c-brand-light);
-    border-color: var(--c-brand);
-    display: inline-block;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 0.5em 1em;
-    margin: 0.5em;
-}
-</style>
+::: details 参考样式代码
 
 ```scss
 .tooltip {
@@ -91,3 +99,5 @@ button {
   }
 }
 ```
+
+:::

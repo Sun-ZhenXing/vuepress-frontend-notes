@@ -54,9 +54,11 @@ import 'font-awesome/css/font-awesome.css'
 import data from '@/data/test-tree.json'
 </script>
 
-其中数据如下：
+::: details 查看数据
 
 @[code json](@/data/test-tree.json)
+
+:::
 
 ## 3. 递归修改名称
 
@@ -65,3 +67,13 @@ import data from '@/data/test-tree.json'
 例如后端得到的数据的名称是 `label` 和 `subNodes`，我们需要将其修改为 `name` 和 `children`。
 
 @[code ts](./src/transform-tree.ts)
+
+## 4. 实现默认展开或固定
+
+细节不予以讨论，本项目实现了一份默认展开的版本，可以参考。
+
+::: details 查看代码
+
+@[code vue](@/components/TreeNode.vue)
+
+:::

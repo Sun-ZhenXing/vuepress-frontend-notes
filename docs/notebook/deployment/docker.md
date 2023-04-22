@@ -44,7 +44,7 @@ docker run -itd -p 80:80 my_test:v1
 
 下面，我们构建一个基于 VuePress 的文档项目，默认页面是 `/vuepress-frontend-notes/`（即你现在正在看到的项目），使用 `pnpm` 编译。
 
-@[code dockerfile](@/../../Dockerfile)
+@[code dockerfile](/Dockerfile)
 
 你可以克隆本项目，即上放的 GitHub 地址，本项目提供了上述 `Dockerfile` 文件，你可以构建镜像：
 
