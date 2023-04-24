@@ -28,8 +28,11 @@ const isShow = ref<boolean[]>([])
  */
 const toggle = (i: number) => {
   if (props.items[i].fixed) return
-  isShow.value[i] = !isShow.value[i]
-  console.log(props.items[i])
+  if (isShow.value[i] === undefined) {
+    isShow.value[i] = true
+  } else {
+    isShow.value[i] = !isShow.value[i]
+  }
 }
 </script>
 
@@ -39,7 +42,7 @@ const toggle = (i: number) => {
       <div class="wrapper" :class="{ tooltip: item.note }" @click="toggle(i)"
         :data-tooltip="item.name + ': ' + item.note">
         <i class="fa" aria-hidden="true" v-if="item.children && item.children.length"
-          :class="(item.show !== isShow[i]) ? 'fa-angle-down' : 'fa-angle-right'"></i>
+          :class="(!!item.show !== !!isShow[i]) ? 'fa-angle-down' : 'fa-angle-right'"></i>
         <i v-else class="fa fa-file-o" aria-hidden="true"></i>
         <span class="name">{{ item.name }}</span>
         <span class="label" v-if="item.label">
@@ -48,7 +51,7 @@ const toggle = (i: number) => {
         </span>
       </div>
       <div class="sub-tree" v-if="item.children && item.children.length">
-        <TreeNode v-show="item.show !== isShow[i]" :items="item.children" />
+        <TreeNode v-show="!!item.show !== !!isShow[i]" :items="item.children" />
       </div>
     </li>
   </ul>
