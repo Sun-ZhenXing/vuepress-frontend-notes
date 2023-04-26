@@ -107,9 +107,9 @@ export default defineUserConfig({
               attrs: { type: 'warning' },
               content: content.substring(6)
             }
-          }
-        }
-      ]
+          },
+        },
+      ],
     }, false),
     docsearchPlugin({
       appId: 'DF0MWQNCKW',
