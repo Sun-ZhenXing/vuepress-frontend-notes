@@ -13,12 +13,16 @@ pnpm i
 pnpm build
 ```
 
+The content will be generated in `docs/.vuepress/dist`. | 内容将生成在 `docs/.vuepress/dist` 下。
+
 Build with Docker | 使用 Docker 构建:
 
 ```bash
 docker build -t vuepress-frontend-notes .
 docker run -itd -p 80:80 vuepress-frontend-notes
 ```
+
+Now you can visit <http://localhost> to see your docs. | 现在你可以访问 <http://localhost> 来查看你的文档。
 
 ## 📜 License | 开源协议
 

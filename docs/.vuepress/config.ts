@@ -65,7 +65,6 @@ export default defineUserConfig({
     mdEnhancePlugin({
       gfm: true,
       container: true,
-      linkCheck: true,
       vPre: true,
       tabs: true,
       card: true,
