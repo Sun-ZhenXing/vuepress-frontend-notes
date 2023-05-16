@@ -1,0 +1,1 @@
+import{_ as t,o,c as r,b as e,d as a}from"./app-78780c47.js";const c={},_=e("h1",{id:"_16-实现数组原型方法",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_16-实现数组原型方法","aria-hidden":"true"},"#"),a(" 16. 实现数组原型方法")],-1),n=[_];function s(d,h){return o(),r("div",null,n)}const l=t(c,[["render",s],["__file","16-implement-array-prototype-method.html.vue"]]);export{l as default};
