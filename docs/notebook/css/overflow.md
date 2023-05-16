@@ -5,6 +5,7 @@
 [^1]: overflow，MDN，<https://developer.mozilla.org/zh-CN/docs/Web/CSS/overflow>
 
 `overflow` 属性用于当一个元素太大而无法适应父级容器的大小时需要做什么，常用值如下：
+
 - `visible`：默认值。内容不会回修剪，可以呈现在元素框之外
 - `hidden`：如果内容超出父级容器，超出部分将会被隐藏
 - `scroll`：无论是否超出容器，都会出现一个滚动条
@@ -18,6 +19,7 @@
 为使 `overflow` 具有效果，块级水平的容器必须有一个设定的高度（`height` 或 `max-height`）或 `white-space` 设置为 `nowrap`。
 
 简单来说，容器必须满足以下条件：
+
 1. `dispaly` 的值非 `inline`
 2. 具有尺寸限制。（`width` / `height` / `max-width` / `max-height` / `absolute` 拉伸）
 3. 对于单元格 `td` 等，还需要 `table` 为 `table-layout: fixed`

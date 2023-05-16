@@ -1,0 +1,11 @@
+default: true
+
+# unordered-list-indent (default: 2)
+MD007:
+  indent: 4
+# MD013: line-length (default: 80)
+MD013: false
+# no-inline-html (allow only AutoCatalog)
+MD033:
+  allowed_elements:
+    - AutoCatalog

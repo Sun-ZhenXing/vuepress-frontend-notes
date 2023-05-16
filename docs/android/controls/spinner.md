@@ -16,6 +16,7 @@
 详细的使用方式见官方文档。
 
 使用指南：
+
 - 使用适配器类 [`SpinnerAdapter`](https://developer.android.google.cn/reference/android/widget/SpinnerAdapter?hl=zh-cn) 来控制行为
 - 如果预先确定了微调框的可用选项，可通过资源文件中定义的字符串数组来提供选项
 - 使用监听器 [`AdapterView.OnItemSelectedListener`](https://developer.android.google.cn/reference/android/widget/AdapterView.OnItemSelectedListener?hl=zh-cn) 来监听事件

@@ -9,18 +9,20 @@
 ### 块级元素不定宽高
 
 1. 利用 `position+transform`  
+
    ```css
    transform: translate(-50%, -50%);
    ```
+
    这里的的 50%，其实是基于子元素的宽高的 50%
    @[code{17-29} css](./src/02-vertical-center-layout/style-1.css)
 2. 利用 `position+margin: auto`
    `position`，将上下左右设置为 `0`，这样子元素就被拉到和父元素一样大，这时候设置 `margin: 0`，就可以实现居中
-   @[code{31-44} css](./src/02-vertical-center-layout/style-1.css) 
+   @[code{31-44} css](./src/02-vertical-center-layout/style-1.css)
 3. 利用 `flex` 布局
    @[code{46-51} css](./src/02-vertical-center-layout/style-1.css)
 4. 利用 `grid` 实现
-   @[code{53-58} css](./src/02-vertical-center-layout/style-1.css) 
+   @[code{53-58} css](./src/02-vertical-center-layout/style-1.css)
 
 ### 块级元素定宽高
 

@@ -17,6 +17,7 @@ WebSocket 协议在 2008 年诞生，2011 年成为国际标准。所有浏览�
 它的最大特点就是，服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，是真正的双向平等对话，属于 [服务器推送技术](https://en.wikipedia.org/wiki/Push_technology) 的一种。
 
 其他特点包括：
+
 1. 建立在 TCP 协议之上，服务器端的实现比较容易
 2. 与 HTTP 协议有着良好的兼容性。默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议，因此握手时不容易屏蔽，能通过各种 HTTP 代理服务器
 3. 数据格式比较轻量，性能开销小，通信高效
@@ -86,6 +87,7 @@ const ws = new WebSocket('ws://localhost:8080')
 ### 3.2 `ws.readyState`
 
 `readyState` 属性返回实例对象的当前状态，共有四种：
+
 - `CONNECTING`：值为 0，表示正在连接
 - `OPEN`：值为 1，表示连接成功，可以通信了
 - `CLOSING`：值为 2，表示连接正在关闭
@@ -263,6 +265,7 @@ ws.addEventListener('error', (event) => {
 WebSocket 协议需要服务器支持。各种服务器的实现，可以查看维基百科的列表。
 
 常用的 Node 实现有以下三种：
+
 - [µWebSockets](https://github.com/uWebSockets/uWebSockets)
 - [Socket.IO](http://socket.io/)
 - [WebSocket-Node](https://github.com/theturtle32/WebSocket-Node)
@@ -320,6 +323,7 @@ websocketd --port=8080 ls
 :::
 
 更多的用法可以参考 [官方示例](https://github.com/joewalnes/websocketd/tree/master/examples/bash)：
+
 - [Bash 脚本读取客户端输入的例子](https://github.com/joewalnes/websocketd/blob/master/examples/bash/greeter.sh)
 - [五行代码实现一个最简单的聊天服务器](https://github.com/joewalnes/websocketd/blob/master/examples/bash/chat.sh)
 

@@ -1,5 +1,7 @@
 # 实现 Tooltip
 
+<!-- markdownlint-disable MD033 -->
+
 [[TOC]]
 
 ## 1. 基本 Tooltip
@@ -46,6 +48,7 @@ Scss 代码：
 另外，有一些提示有边角，例如 [A step-by-step guide to making pure-CSS tooltips](https://www.freecodecamp.org/news/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346) 一文所展示的那样，在本文中实现了一个最基本的边角提示。
 
 边角使用 `::before` 表现，核心样式是：
+
 - `border-bottom-color`，设置边角的颜色
 - `margin-left`，设置边角的大小，为负值就会出现三角形
 

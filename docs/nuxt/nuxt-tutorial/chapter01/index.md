@@ -7,6 +7,7 @@
 *@def* **模板渲染** 即动态网站使用相同的模板和不同的数据来生成不同的 HTML 页面。
 
 可以在哪些位置进行渲染？
+
 - 服务端渲染
 - 客户端渲染
 - 同构渲染
@@ -41,7 +42,7 @@ Nuxt3 即同构渲染框架，帮助我们快速开发同构渲染页面。
 
 ## 1.4 Nuxt3 用于？
 
-![](./../images/app.svg)
+![app](./../images/app.svg)
 
 > 图片来源于：<https://nuxt.com/docs/getting-started/views>。
 

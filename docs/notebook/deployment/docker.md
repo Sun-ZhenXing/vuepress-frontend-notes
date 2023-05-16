@@ -65,6 +65,7 @@ docker run -itd -p 80:80 vuepress-frontend-notes
 如果你的项目比较大，或者服务器内存不足，可能在构建时出现 `FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory` 错误。
 
 几种解决方法，其中 `4096`（4 GB）可改为你需要的空间大小：
+
 - 在 `Dockerfile` 中添加 `ENV NODE_OPTIONS=--max-old-space-size=4096`
 - 添加命令 `export NODE_OPTIONS=--max_old_space_size=4096`
 - *@note:已弃用* 使用 [`increase-memory-limit`](https://www.npmjs.com/package/increase-memory-limit) 插件

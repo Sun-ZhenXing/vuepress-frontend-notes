@@ -1,5 +1,7 @@
 # Vue 树形组件
 
+<!-- markdownlint-disable MD033 -->
+
 [[TOC]]
 
 ## 1. 实现原理

@@ -88,7 +88,7 @@ axios.get('/user?ID=12345')
 
 上述请求也可以按以下方式完成
 
-```js 
+```js
 axios.get('/user', {
     params: {
       ID: 12345
@@ -155,39 +155,39 @@ Promise.all([getUserAccount(), getUserPermissions()])
 
 [API 参考手册](https://www.axios-http.cn/docs/api_intro) 的文档结构和讲解的内容，可用于参考和学习。
 
-1.  Axios API
+1. Axios API
     - 创建新的请求
         - `axios(config)`
         - `axios(url[, config])`
     - 列举可用的请求方式别名
-2.  Axios 实例
+2. Axios 实例
     - 使用 `axios.create([config])` 创建实例
     - 列举可以用的实例方法
-3.  请求配置
+3. 请求配置
     - 列举所有创建请求时可以用的配置选项
-4.  响应结构
+4. 响应结构
     - 列举一个请求的响应包含的信息
     - 列举在 `then()` 方法中包含的信息
     - 解释 `catch()` 方法可以捕获的错误信息
-5.  默认配置
+5. 默认配置
     - 如何设置全局 `axios` 默认值
     - 如何设置自定义实例默认值
     - 解释配置的优先级
-6.  拦截器
+6. 拦截器
     - 如何在请求或响应被 `then()` 或 `catch()` 处理前拦截它们
     - 如何移除拦截器
     - 如何给自定义的 `axios` 实例添加拦截器
-7.  错误处理
+7. 错误处理
     - 处理错误的一个示例
     - 如何使用 `validateStatus` 选项，自定义抛出错误的 HTTP code
     - 如何使用 `toJSON()` 获取更多关于 HTTP 错误的信息
-8.  取消请求
+8. 取消请求
     - 如何使用 `cancel token` 取消一个请求
     - 如何创建 `cancel token`
         - `CancelToken.source` 工厂方法创建一个 `cancel token`
         - 传递一个 `executor()` 函数到 `CancelToken` 的构造函数
     - 注意：可以使用同一个 `cancel token` 取消多个请求
-9.  请求体编码
+9. 请求体编码
     - 默认情况下，将 JavaScript 对象序列化为 `JSON`
     - 如何以 `application/x-www-form-urlencoded` 格式发送数据
     - 在浏览器中

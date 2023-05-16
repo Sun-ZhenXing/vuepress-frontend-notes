@@ -1,5 +1,7 @@
 # pnpm 介绍
 
+<!-- markdownlint-disable MD033 -->
+
 [[TOC]]
 
 ## 1. pnpm 介绍
@@ -9,11 +11,13 @@
 `pnpm`（perfomance npm）源于对性能和更少空间的需求。
 
 简单介绍：
+
 1. `pnpm` 是一个包管理器，类似于 `npm` 和 `yarn`。
 2. `pnpm` 极快且节省空间，因为它使用链接安装依赖，而且能避免 [幽灵依赖问题](https://zhuanlan.zhihu.com/p/412419619)。
 3. `pnpm` 提供了兼容性选项，提供持续集成的可靠支持。
 
 `pnpm` 分三个阶段执行安装：
+
 1. 依赖解析：仓库中没有的依赖都被识别并获取到仓库。
 2. 目录结构计算：`node_modules` 目录结构是根据依赖计算出来的。
 3. 链接依赖项：所有以前安装过的依赖项都会直接从仓库中获取并链接到 `node_modules`。
@@ -38,8 +42,6 @@ Linux 可能需要指定 Shell：
 SHELL=bash pnpm setup
 source /root/.bashrc
 ```
-
-
 
 ## 2. 依赖安装方式
 

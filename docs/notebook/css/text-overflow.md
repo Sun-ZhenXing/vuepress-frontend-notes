@@ -1,5 +1,7 @@
 # text-overflow
 
+<!-- markdownlint-disable MD033 -->
+
 [[TOC]]
 
 ## 1. 功能
