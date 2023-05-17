@@ -18,12 +18,12 @@ export default defineUserConfig({
   title: '前端笔记',
   description: '前端笔记',
   head: [
-    ['link', { rel: 'icon', href: `${BASE_PATH}favicon.svg` }]
+    ['link', { rel: 'icon', href: `${BASE_PATH}favicon.svg` }],
   ],
   base: BASE_PATH,
   markdown: {
     code: {
-      lineNumbers: 10
+      lineNumbers: 10,
     },
     importCode: {
       handleImportPath: str => str
@@ -73,6 +73,8 @@ export default defineUserConfig({
         resolvePath: file => {
           if (file.startsWith('@'))
             return file.replace('@', CURRENT_PATH)
+          if (file.startsWith('/'))
+            return file.replace(/^\//, ROOT_PATH.replace(/(?:|\\|\/)$/, '/'))
           return file
         },
       },
@@ -94,7 +96,7 @@ export default defineUserConfig({
             if (tag === 'em') return {
               tag: 'Badge',
               attrs: { type: 'tip' },
-              content: '定义'
+              content: '定义',
             }
           }
         },
@@ -104,7 +106,7 @@ export default defineUserConfig({
             if (tag === 'em') return {
               tag: 'Badge',
               attrs: { type: 'warning' },
-              content: content.substring(6)
+              content: content.substring(6),
             }
           },
         },
@@ -164,13 +166,16 @@ export default defineUserConfig({
     }),
     autoCatalogPlugin({
       orderGetter: ({ title, routeMeta }) => {
-        if (routeMeta.order) return routeMeta.order as number
+        if (routeMeta.order)
+          return routeMeta.order as number
         const prefix = title.match(/^\d+. /)
-        if (prefix) return parseInt(prefix[0])
+        if (prefix)
+          return parseInt(prefix[0])
         const suffix = title.match(/\d+$/)
-        if (suffix) return parseInt(suffix[0])
+        if (suffix)
+          return parseInt(suffix[0])
         return 0
-      }
+      },
     }),
     copyCodePlugin({
       showInMobile: true,

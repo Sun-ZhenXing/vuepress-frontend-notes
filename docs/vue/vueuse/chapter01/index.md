@@ -2,7 +2,7 @@
 
 ::: warning 官方文档
 
-此笔记不是官方文档，如果需要阅读官方文档请访问 [VueUse 官方文档](https://vueuse.org/guide/)。
+此笔记不是官方文档，如果需要阅读官方文档请访问 [VueUse 官方文档](https://vueuse.org/guide/)。现在有第三方翻译的中文版本 [VueUse 中文文档](http://www.vueusejs.com/)，与英文版本一致。
 
 :::
 

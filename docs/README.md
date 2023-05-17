@@ -15,3 +15,7 @@ footer: '前端笔记合集，由 <a href="https://github.com/Sun-ZhenXing/" tar
 # 前端笔记合集
 
 <AutoCatalog />
+
+## 项目结构图
+
+<!-- @include: /diagram.svg -->

@@ -1089,7 +1089,7 @@ packages:
       connect-history-api-fallback: 2.0.0
       postcss: 8.4.23
       postcss-load-config: 4.0.1(postcss@8.4.23)
-      rollup: 3.21.8
+      rollup: 3.22.0
       vite: 4.3.7
       vue: 3.3.2
       vue-router: 4.2.0(vue@3.3.2)
@@ -3055,8 +3055,8 @@ packages:
     resolution: {integrity: sha512-ndEIpszUHiG4HtDsQLeIuMvRsDnn8c8rYStabochtUeCvfuvNptb5TUbVD68LRAILPX7p9nqQGh4xJgn3EHS/g==}
     dev: true
 
-  /rollup@3.21.8:
-    resolution: {integrity: sha512-SSFV2T2fWtQ/vvBip85u2Nr0GNKireabH9d7nXswBg+XSH+jbVDSYptRAEbCEsquhs503rpPA9POYAp0/Jhasw==}
+  /rollup@3.22.0:
+    resolution: {integrity: sha512-imsigcWor5Y/dC0rz2q0bBt9PabcL3TORry2hAa6O6BuMvY71bqHyfReAz5qyAqiQATD1m70qdntqBfBQjVWpQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -3325,7 +3325,7 @@ packages:
     dependencies:
       esbuild: 0.17.19
       postcss: 8.4.23
-      rollup: 3.21.8
+      rollup: 3.22.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
