@@ -1,0 +1,1 @@
+import{_ as t,o as n,c as a,b as e,d as c}from"./app-e8967aea.js";const _={},o=e("h1",{id:"_18-实现-new",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_18-实现-new","aria-hidden":"true"},"#"),c(" 18. 实现 new")],-1),r=[o];function s(d,i){return n(),a("div",null,r)}const h=t(_,[["render",s],["__file","18-implement-new.html.vue"]]);export{h as default};

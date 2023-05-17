@@ -1,1 +1,0 @@
-import{_ as a,o as t,c as o,b as e,d as c}from"./app-54d12e78.js";const _={},r=e("h1",{id:"_7-前端文件上传",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_7-前端文件上传","aria-hidden":"true"},"#"),c(" 7. 前端文件上传")],-1),s=[r];function d(n,l){return t(),o("div",null,s)}const h=a(_,[["render",d],["__file","7-upload.html.vue"]]);export{h as default};

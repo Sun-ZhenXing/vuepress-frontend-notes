@@ -1,0 +1,1 @@
+import{_ as t,r as o,o as n,c,a as r,b as e,d as s}from"./app-e8967aea.js";const d={},_=e("h1",{id:"vue-知识框架",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#vue-知识框架","aria-hidden":"true"},"#"),s(" Vue 知识框架")],-1);function l(i,u){const a=o("AutoCatalog");return n(),c("div",null,[_,r(a)])}const f=t(d,[["render",l],["__file","index.html.vue"]]);export{f as default};
