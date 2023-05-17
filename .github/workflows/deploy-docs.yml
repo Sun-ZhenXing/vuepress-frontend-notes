@@ -7,6 +7,15 @@ on:
       - main
 
 jobs:
+  create-diagram:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Update diagram
+        uses: githubocto/repo-visualizer@main
+        with:
+          excluded_paths: ".github,.vscode"
   deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:

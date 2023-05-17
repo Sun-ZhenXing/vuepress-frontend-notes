@@ -1,8 +1,10 @@
 # VuePress Frontend Notes | 前端笔记
 
-![](https://img.shields.io/github/actions/workflow/status/Sun-ZhenXing/vuepress-frontend-notes/deploy-docs.yml?branch=main)
+![actions status](https://img.shields.io/github/actions/workflow/status/Sun-ZhenXing/vuepress-frontend-notes/deploy-docs.yml?branch=main)
 
 🚀 [Online Reading](https://blog.alexsun.top/vuepress-frontend-notes/) | [在线阅读](https://blog.alexsun.top/vuepress-frontend-notes/).
+
+![project diagram](./diagram.svg)
 
 ## 🛠️ Build Docs | 构建文档
 

@@ -9,6 +9,7 @@
 ## 2. 考虑异步情况的 Promise
 
 我们按照 `setTimeout` 为例，`setTimeOut(function, delay, args...)`：
+
 - 函数名：那么等 `delay` 以后再去调用函数
 - 函数：那么直接会调用函数
 - 箭头函数包裹着的函数：等待 `delay` 以后调用
@@ -24,6 +25,7 @@
 ## 4. 实现 resolvePromise
 
 我们来实现一下，`resolvePromise`函数，其用于判断返回值：
+
 - `x === promise2` 则错误
 - `x` 的类型不是函数也不是 `Object`，那么就直接进入 `resolve`
 - 否则的话，判断 `x` 的 `then` 类型，如果为函数，那么一定是 `Promise`，然后判断这个时成功还是失败
@@ -34,6 +36,7 @@
 ## 5. 完整 Promise 版本
 
 因为 `then` 的两个参数 `onFinished` 和 `onRejected`：
+
 - 不是必须的，如果是非函数，那么需要被忽略
 - 不是同步的，必须是被异步调用的，这就需要用 `setTimeout` 包裹，并且使用 `try-catch` 进行错误捕捉
 
