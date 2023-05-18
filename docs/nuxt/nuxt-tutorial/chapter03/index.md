@@ -10,10 +10,12 @@ Nuxt3 配置好了文件系统路由，这意味着 `pages/` 下的 Vue 组件�
 
 ```vue
 <template>
-  <header>
-    <h2>导航内容</h2>
-  </header>
-  <NuxtPage />
+  <div>
+    <header>
+      <h2>导航内容</h2>
+    </header>
+    <NuxtPage />
+  </div>
 </template>
 ```
 
@@ -64,17 +66,19 @@ Nuxt3 将自动生成下面的路由信息：
 
 ```vue{4-10}
 <template>
-  <header>
-    <h2>导航内容</h2>
-    <nav>
-      <ul>
-        <li><NuxtLink to="/about">关于</NuxtLink></li>
-        <li><NuxtLink to="/posts/1">文章 1</NuxtLink></li>
-        <li><NuxtLink to="/posts/2">文章 2</NuxtLink></li>
-      </ul>
-    </nav>
-  </header>
-  <NuxtPage />
+  <div>
+    <header>
+      <h2>导航内容</h2>
+      <nav>
+        <ul>
+          <li><NuxtLink to="/about">关于</NuxtLink></li>
+          <li><NuxtLink to="/posts/1">文章 1</NuxtLink></li>
+          <li><NuxtLink to="/posts/2">文章 2</NuxtLink></li>
+        </ul>
+      </nav>
+    </header>
+    <NuxtPage />
+  </div>
 </template>
 ```
 

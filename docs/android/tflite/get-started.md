@@ -28,7 +28,7 @@ for (i in 0..MAX_RESULT_DISPLAY-1) {
 
 然后可以看到教程第七步的效果。下面是使用 GPU 推理，加入依赖：
 
-```gradle
+```properties
 implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
 ```
 
@@ -53,7 +53,7 @@ private val flowerModel: FlowerModel by lazy {
 
 如果此时正在使用 GPU 推理，控制台能看到日志。如果出现下面的日志
 
-```log
+```console
 D/TFL Classify: This device is GPU Incompatible
 ```
 

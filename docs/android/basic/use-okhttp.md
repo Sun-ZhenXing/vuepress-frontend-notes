@@ -6,7 +6,7 @@
 
 在 `build.gradle` 中添加：
 
-```gradle
+```properties
 implementation("com.squareup.okhttp3:okhttp:4.10.0")
 ```
 

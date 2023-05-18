@@ -6,7 +6,7 @@
 
 部分包无法下载，需要使用镜像仓库。在 `settings.gradle` 内可设置镜像仓库。
 
-```gradle
+```properties
 repositories {
     gradlePluginPortal()
     google()
