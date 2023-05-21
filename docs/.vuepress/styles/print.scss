@@ -55,4 +55,9 @@
   .katex-display>.katex {
     white-space: pre-wrap !important;
   }
+
+  // hide mermaid actions
+  .mermaid-actions {
+    display: none;
+  }
 }

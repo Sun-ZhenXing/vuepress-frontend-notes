@@ -16,16 +16,16 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-可以在 Linux/WSL2 中使用下面的命令构建：
+使用下面的命令构建：
 
 ```bash
-docker build -t my_test:v1 .
+docker build -t my_test .
 ```
 
 构建成功后运行容器：
 
 ```bash
-docker run -itd -p 80:80 my_test:v1
+docker run -itd -p 80:80 my_test
 ```
 
 打开 <http://localhost/> 即可看到内容。
