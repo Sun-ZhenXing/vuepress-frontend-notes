@@ -1,1 +1,0 @@
-import{_ as a,r as o,o as n,c,b as r,d as e,e as s}from"./app-43912dd2.js";const d={},_=e("h1",{id:"vue-知识框架",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#vue-知识框架","aria-hidden":"true"},"#"),s(" Vue 知识框架")],-1);function l(i,u){const t=o("AutoCatalog");return n(),c("div",null,[_,r(t)])}const f=a(d,[["render",l],["__file","index.html.vue"]]);export{f as default};
