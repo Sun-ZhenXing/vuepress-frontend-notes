@@ -90,6 +90,9 @@ export default defineUserConfig({
       katex: true,
       mermaid: true,
       delay: 200,
+      playground: {
+        presets: ['ts'],
+      },
       stylize: [
         {
           matcher: '@def',
