@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-fca3c9b4","path":"/notebook/typescript/type-challenges/7-readonly.html","title":"7. Readonly","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685026867000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/7-readonly.md"}');export{e as data};

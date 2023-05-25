@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-256593e4","path":"/notebook/typescript/type-challenges/4-pick.html","title":"4. Pick","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685026867000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/4-pick.md"}');export{e as data};
