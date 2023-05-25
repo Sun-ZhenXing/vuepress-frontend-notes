@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-453c683b","path":"/notebook/typescript/type-challenges/","title":"TypeScript 类型体操","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685020995000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/index.md"}');export{e as data};
