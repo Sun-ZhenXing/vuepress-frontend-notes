@@ -130,6 +130,12 @@ declare function fn(x: string): number
 
 ## 3. 常见工具类型
 
+一些定义参考：
+
+- `never` 类型是永远不会有值的类型
+- `any` 类型是任意类型，任意类型都可以看做 `any` 类型
+- `unknown` 类型是类型安全的 `any` 类型
+
 | 类型                                | 描述                                       | 发布版本 |
 | ----------------------------------- | ------------------------------------------ | -------- |
 | `Awaited<T>`                        | 获取 `Promise` 的返回值                    | 4.5      |
@@ -168,3 +174,115 @@ type Omit<T, K extends string | number | symbol> = {
 - `Lowercase<StringType>`
 - `Capitalize<StringType>`
 - `Uncapitalize<StringType>`
+
+## 4. 有用的类型
+
+### 4.1 元组类型
+
+元组类型描述一个集合对象的特征，例如 `[string, number]` 也是一种类型。元组类型还包含一种一个或多个的语法，使用 `...` 来表示可变参数（不定参数），例如：`[...args: number]`，这在函数中很常见。
+
+### 4.2 可空类型
+
+可空类型在类型后面加上 `?`，表示 `t | undefined` 的含义，注意不是 `t | null`。
+
+```ts
+interface A {
+  a: number
+  b?: string
+}
+```
+
+`b` 的类型是 `t | undefined`。可空类型的设计和 C# 的可空类型（`Nullable` 类型）类似，原因是 TypeScript 的作者就是 C# 的作者，这使得两种语言的设计异常巧妙地吻合。
+
+### 4.3 交叉类型
+
+如果要满足两种以上的类型，可以使用 `&` 来交叉两种类型。交叉类型表示这个类型满足被交叉的所有类型。
+
+```ts
+type A = B & C
+```
+
+那么 `A` 同时具有 `B` 和 `C` 的结构。
+
+例如：
+
+```ts
+type A = 1 | 2 | 3
+type B = 1 | 3 | 4
+type C = A & B
+```
+
+此时 `C` 的类型为 `1 | 3`，因为 `1 | 3` 同时满足 `A` 和 `B`。
+
+但是 `interface` 的行为就有点不同了：
+
+```ts
+interface I1 {
+  x: number
+}
+
+interface I2 {
+  y: number
+}
+
+type I3 = I1 & I2
+
+const a: I3 = {
+  x: 1,
+  y: 2
+}
+```
+
+为了同时满足 `I1` 和 `I2`，`I3` 必须同时具有这两个接口的所有属性。
+
+### 4.4 `as` 用法
+
+`as` 总是将指定对象视为另一种类型的对象，并且这两种类型是可转换的。如果明显不能转换的类型将报错。
+
+哪些类型可以转换？
+
+- 可空类型和对应的原类型
+- `a | null` 转换为 `a`
+- `any` 的其他任意类型
+- `unknown` 和其他任意类型
+- ……
+
+如果明显不能转换的类型，需要强制转换时，可以借助 `any`。
+
+```ts
+// 将 a 视为 string
+const a = (3 as any) as string
+```
+
+例如：
+
+```ts
+const canvas = document.getElementById('canvas')
+// canvas: HTMLElement | null
+```
+
+```ts
+const canvas2 = document.getElementById('canvas') as HTMLCanvasElement
+// canvas: HTMLCanvasElement
+```
+
+```ts
+const ctx = canvas.getContext('2d')
+// ctx: CanvasRenderingContext2D | null
+```
+
+```ts
+const ctx = canvas.getContext('2d') as CanvasRenderingContext2D
+// ctx: CanvasRenderingContext2D
+```
+
+### 4.5 高级特征
+
+- 条件类型
+- 映射类型
+- 索引类型
+- 区分类型
+- 枚举类型
+- 象征类型
+
+这些类型在本文不会详细讨论，我们只会举例一些情况来说明。
