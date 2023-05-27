@@ -1,1 +1,0 @@
-import{_ as t,r as a,o as r,c,b as s,d as e,e as n}from"./app-d727cbc2.js";const d={},_=e("h1",{id:"vueuse-core",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#vueuse-core","aria-hidden":"true"},"#"),n(" VueUse Core")],-1);function l(u,i){const o=a("AutoCatalog");return r(),c("div",null,[_,s(o)])}const f=t(d,[["render",l],["__file","index.html.vue"]]);export{f as default};
