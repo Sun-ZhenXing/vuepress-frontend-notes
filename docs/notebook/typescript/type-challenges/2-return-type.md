@@ -1,8 +1,8 @@
-# 2. ReturnType
+# 2. Return Type
 
 获取函数的返回类型，即实现 `ReturnType<T>`。
 
-::: playground#ts 2. ReturnType
+::: playground#ts 2. Return Type
 
 @file index.ts
 
@@ -32,6 +32,7 @@ const fn1 = (v: boolean, w: any) => v ? 1 : 2
 
 // ============= Your Code Here =============
 type MyReturnType<T> = any
+
 ```
 
 :::

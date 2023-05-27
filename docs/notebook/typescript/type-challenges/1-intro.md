@@ -66,3 +66,7 @@ import type { Equal, Expect } from '@type-challenges/utils'
 
 :::
 ````
+
+## 1.3 自动生成笔记
+
+在当前文件夹下有一个 `gen.py` 文件，直接运行即可将你练习过的题目自动整理为笔记。
