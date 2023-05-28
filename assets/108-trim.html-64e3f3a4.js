@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7fe54270","path":"/notebook/typescript/type-challenges/108-trim.html","title":"108. Trim","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685259723000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/108-trim.md"}');export{t as data};
