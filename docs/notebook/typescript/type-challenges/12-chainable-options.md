@@ -72,7 +72,6 @@ type Chainable<T = {}> = {
   ) => Chainable<Omit<T, K> & Record<K, V>>
   get: () => T
 }
-
 ```
 
 :::

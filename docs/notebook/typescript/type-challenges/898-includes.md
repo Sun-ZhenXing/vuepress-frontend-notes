@@ -39,7 +39,8 @@ type Includes<T, U> = any
 ::: details 点击查看答案
 
 ```ts
-type Includes<T extends readonly any[], U> = T extends [infer F, ...infer R] ? (Equal<F, U> extends true ? true : Includes<R, U>) : false
+type Includes<T extends readonly any[], U> = T extends [infer F, ...infer R] ?
+  (Equal<F, U> extends true ? true : Includes<R, U>) : false
 ```
 
 :::
