@@ -1,0 +1,1 @@
+import{_ as s,r as t,o,c as n,b as c,d as e,e as r}from"./app-3399a86c.js";const d={},_=e("h1",{id:"sass-笔记",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#sass-笔记","aria-hidden":"true"},"#"),r(" Sass 笔记")],-1);function l(i,h){const a=t("AutoCatalog");return o(),n("div",null,[_,c(a)])}const m=s(d,[["render",l],["__file","index.html.vue"]]);export{m as default};
