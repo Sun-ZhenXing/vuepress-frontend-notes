@@ -4,7 +4,18 @@
 
 ## 1. 什么是 Prisma
 
-Prisma 是一个开源的 ORM 框架，支持各类常见数据库系统，提供了数据模型、自动迁移、类型安全和自动补全支持，拥有活跃的社区和完善的支持。
+Prisma 是一个开源的 ORM 框架，支持各类常见数据库系统，提供了数据模型、自动迁移、类型安全和自动补全支持，拥有活跃的社区和完善的支持。不同于传统的 ORM 框架，Prisma 使用了一些新方法来避免 ORM 的一些固有问题。
+
+Prisma 现在不仅支持关系型数据库，也支持 NoSQL 数据库，如 MongoDB。此外还支持地理数据库 CockroachDB 等。
+
+Prisma 适用于在各种架构中使用，如 REST API、GraphQL API、gRPC API 等。常见全栈应用：
+
+- [Next.js](https://nextjs.org/)
+- [Remix](https://remix.run/)
+- [SvelteKit](https://kit.svelte.dev/)
+- [Nuxt](https://nuxt.com/)
+- [Redwood](https://redwoodjs.com/)
+- [t3 stack — using tRPC](https://create.t3.gg/)
 
 ## 2. 开始使用
 
@@ -42,7 +53,7 @@ pnpm add -D prisma @prisma/client
 npx prisma init --datasource-provider sqlite
 ```
 
-现在我们已经创建了 `prisma/schema.prisma` 文件，它是 Prisma 的数据模型定义文件，我们可以在其中定义数据模型和数据源。
+现在我们已经创建了 `prisma/schema.prisma` 文件，它是 Prisma 的数据模型定义文件，我们可以在其中定义数据模型和数据源。如果你希望在已的数据库中逆向创建 Prisma 请参考 [官方文档：添加到已有项目](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project)。
 
 在 VS Code 中，我们可用使用插件 `Prisma.prisma` 获得 Prisma 的语法高亮和自动补全支持。
 
@@ -231,3 +242,10 @@ npx prisma studio
 ```
 
 现在打开 <http://localhost:5555>，即可看到数据库中的信息。
+
+::: tip 更多信息
+
+- [命令行参考](./cli.md)
+- [官方文档：在项目中使用关系数据库或 MongoDB](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch)
+
+:::
