@@ -87,7 +87,9 @@ export default defineUserConfig({
       mark: true,
       imgLazyload: true,
       tasklist: true,
-      katex: true,
+      katex: {
+        copy: true,
+      },
       mermaid: true,
       delay: 200,
       playground: {
