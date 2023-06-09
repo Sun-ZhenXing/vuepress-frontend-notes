@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as o,d as e,e as r}from"./app-a4fc4acc.js";const c={},_=e("h1",{id:"_4-编辑图片并保存",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_4-编辑图片并保存","aria-hidden":"true"},"#"),r(" 4. 编辑图片并保存")],-1),s=[_];function d(n,i){return a(),o("div",null,s)}const l=t(c,[["render",d],["__file","4-image-editor.html.vue"]]);export{l as default};
