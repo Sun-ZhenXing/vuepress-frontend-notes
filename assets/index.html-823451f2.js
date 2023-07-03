@@ -1,0 +1,1 @@
+import{_ as t,r as a,o as n,c,b as r,d as e,e as s}from"./app-fb7f4aba.js";const l={},d=e("h1",{id:"file-和-blob",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#file-和-blob","aria-hidden":"true"},"#"),s(" File 和 Blob")],-1);function _(i,f){const o=a("AutoCatalog");return n(),c("div",null,[d,r(o)])}const m=t(l,[["render",_],["__file","index.html.vue"]]);export{m as default};
