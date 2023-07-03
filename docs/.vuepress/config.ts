@@ -87,6 +87,7 @@ export default defineUserConfig({
       mark: true,
       imgLazyload: true,
       tasklist: true,
+      linkify: false,
       katex: {
         copy: true,
       },

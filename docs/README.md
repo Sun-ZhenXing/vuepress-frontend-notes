@@ -17,9 +17,3 @@ footer: '前端笔记合集，由 <a href="https://github.com/Sun-ZhenXing/" tar
 <!-- markdownlint-disable MD033 -->
 
 <AutoCatalog />
-
-## 项目结构图
-
-<div class="diagram" style="max-width: 100%; overflow: auto;">
-  <!-- @include: /diagram.svg -->
-</div>
