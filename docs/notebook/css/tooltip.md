@@ -18,13 +18,13 @@
 <style lang="scss" scoped>
 @import "@/styles/tooltip.scss";
 button {
-    background-color: var(--c-brand-light);
-    border-color: var(--c-brand);
-    display: inline-block;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 0.5em 1em;
-    margin: 0.5em;
+  background-color: var(--c-brand-light);
+  border-color: var(--c-brand);
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  margin: 0.5em;
 }
 </style>
 

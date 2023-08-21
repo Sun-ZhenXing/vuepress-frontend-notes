@@ -1,5 +1,5 @@
 import process from 'node:process'
-import { defineUserConfig, defaultTheme } from 'vuepress'
+import { defaultTheme, defineUserConfig } from 'vuepress'
 import { getDirname, path } from '@vuepress/utils'
 import { mdEnhancePlugin } from 'vuepress-plugin-md-enhance'
 import { copyCodePlugin } from 'vuepress-plugin-copy-code2'
@@ -71,7 +71,7 @@ export default defineUserConfig({
       card: true,
       codetabs: true,
       include: {
-        resolvePath: file => {
+        resolvePath: (file) => {
           if (file.startsWith('@'))
             return file.replace('@', CURRENT_PATH)
           if (file.startsWith('/'))
@@ -100,20 +100,24 @@ export default defineUserConfig({
         {
           matcher: '@def',
           replacer: ({ tag }) => {
-            if (tag === 'em') return {
-              tag: 'Badge',
-              attrs: { type: 'tip' },
-              content: '定义',
+            if (tag === 'em') {
+              return {
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: '定义',
+              }
             }
-          }
+          },
         },
         {
           matcher: /@note:.+/,
           replacer: ({ tag, content }) => {
-            if (tag === 'em') return {
-              tag: 'Badge',
-              attrs: { type: 'warning' },
-              content: content.substring(6),
+            if (tag === 'em') {
+              return {
+                tag: 'Badge',
+                attrs: { type: 'warning' },
+                content: content.substring(6),
+              }
             }
           },
         },
@@ -177,10 +181,10 @@ export default defineUserConfig({
           return routeMeta.order as number
         const prefix = title.match(/^\d+. /)
         if (prefix)
-          return parseInt(prefix[0])
+          return Number.parseInt(prefix[0])
         const suffix = title.match(/\d+$/)
         if (suffix)
-          return parseInt(suffix[0])
+          return Number.parseInt(suffix[0])
         return 0
       },
     }),

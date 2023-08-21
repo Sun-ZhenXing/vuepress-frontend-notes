@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-type Node = {
+interface Node {
   // 名称
   name: string
   // 标签
@@ -17,7 +17,7 @@ type Node = {
 }
 
 const props = defineProps<{
-  items: Node[],
+  items: Node[]
 }>()
 
 const isShow = ref<boolean[]>([])
@@ -26,31 +26,35 @@ const isShow = ref<boolean[]>([])
  * 切换显示状态
  * @param i 第几个节点
  */
-const toggle = (i: number) => {
-  if (props.items[i].fixed) return
-  if (isShow.value[i] === undefined) {
+function toggle(i: number) {
+  if (props.items[i].fixed)
+    return
+  if (isShow.value[i] === undefined)
     isShow.value[i] = true
-  } else {
+  else
     isShow.value[i] = !isShow.value[i]
-  }
 }
 </script>
 
 <template>
   <ul>
     <li v-for="item, i in props.items" :key="item.name">
-      <div class="wrapper" :class="{ tooltip: item.note }" @click="toggle(i)"
-        :data-tooltip="item.name + ': ' + item.note">
-        <i class="fa" aria-hidden="true" v-if="item.children && item.children.length"
-          :class="(!!item.show !== !!isShow[i]) ? 'fa-angle-down' : 'fa-angle-right'"></i>
-        <i v-else class="fa fa-file-o" aria-hidden="true"></i>
+      <div
+        class="wrapper" :class="{ tooltip: item.note }" :data-tooltip="`${item.name}: ${item.note}`"
+        @click="toggle(i)"
+      >
+        <i
+          v-if="item.children && item.children.length" class="fa" aria-hidden="true"
+          :class="(!!item.show !== !!isShow[i]) ? 'fa-angle-down' : 'fa-angle-right'"
+        />
+        <i v-else class="fa fa-file-o" aria-hidden="true" />
         <span class="name">{{ item.name }}</span>
-        <span class="label" v-if="item.label">
+        <span v-if="item.label" class="label">
           {{ item.label }}
-          <i v-if="item.note" class="fa fa-question-circle"></i>
+          <i v-if="item.note" class="fa fa-question-circle" />
         </span>
       </div>
-      <div class="sub-tree" v-if="item.children && item.children.length">
+      <div v-if="item.children && item.children.length" class="sub-tree">
         <TreeNode v-show="!!item.show !== !!isShow[i]" :items="item.children" />
       </div>
     </li>

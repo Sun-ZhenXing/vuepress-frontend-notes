@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-type Node = {
+interface Node {
   name: string
   children?: Node[]
 }
 
 const props = defineProps<{
-  items: Node[],
+  items: Node[]
 }>()
 
 const isShow = ref<boolean[]>([])
@@ -17,12 +17,14 @@ const isShow = ref<boolean[]>([])
   <ul>
     <li v-for="item, i in props.items" :key="item.name">
       <div class="wrapper" @click="isShow[i] = !isShow[i]">
-        <i class="fa" aria-hidden="true" v-if="item.children && item.children.length"
-          :class="isShow[i] ? 'fa-angle-down' : 'fa-angle-right'"></i>
-        <i v-else class="fa fa-file-o" aria-hidden="true"></i>
+        <i
+          v-if="item.children && item.children.length" class="fa" aria-hidden="true"
+          :class="isShow[i] ? 'fa-angle-down' : 'fa-angle-right'"
+        />
+        <i v-else class="fa fa-file-o" aria-hidden="true" />
         <span class="name">{{ item.name }}</span>
       </div>
-      <div class="sub-tree" v-if="item.children && item.children.length">
+      <div v-if="item.children && item.children.length" class="sub-tree">
         <tree-test v-show="isShow[i]" :items="item.children" />
       </div>
     </li>
