@@ -1,0 +1,1 @@
+import{_ as a,r as o,o as s,c,b as n,d as e,e as r}from"./app-6e2c49c0.js";const d={},_=e("h1",{id:"笔记本-css-部分",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#笔记本-css-部分","aria-hidden":"true"},"#"),r(" 笔记本 CSS 部分")],-1);function l(i,h){const t=o("AutoCatalog");return s(),c("div",null,[_,n(t)])}const m=a(d,[["render",l],["__file","index.html.vue"]]);export{m as default};
