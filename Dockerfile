@@ -16,7 +16,7 @@ RUN npm -v \
     && pnpm build
 
 # Nginx Server
-FROM nginx:nginx:1.25.2-alpine3.18-slim
+FROM nginx:1.25.2-alpine3.18-slim
 
 WORKDIR /usr/share/nginx/html/vuepress-frontend-notes/
 

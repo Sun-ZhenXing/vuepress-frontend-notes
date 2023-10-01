@@ -1,5 +1,7 @@
 # soybean-admin 入门
 
+<!-- markdownlint-disable MD033 -->
+
 [[TOC]]
 
 ## 1. 项目简介
@@ -48,10 +50,11 @@
 ### 2.1 系统环境依赖
 
 本地开发基础环境：
+
 - VS Code
 - Git
 - Node.js 14.18+（推荐 18.x）
-- pnpm@7.x（推荐 7.30+）
+- <pnpm@7.x>（推荐 7.30+）
 
 ::: details Docker 配置指南
 
@@ -146,16 +149,17 @@ declare module '*.vue' {
 
 <script setup lang="ts">
 import TreeNode from '@/components/TreeNode.vue'
-import 'font-awesome/css/font-awesome.css'
 import menu from '@/data/menu.json'
 </script>
 
 ### 3.2 路由
 
 首先 `src\router\index.ts` 中从环境变量中读取 `VITE_HASH_ROUTE` 和 `VITE_BASE_URL` 决定创建路由的属性。
+
 - 路由定义文件 `src\router\routes\index.ts`，路由使用了自定义类型
 
 通过 `createRouterGuard` 创建路由守卫，此函数在路由前加载进度条，然后验证权限，路由后关闭进度条。
+
 - 调用了 `createPermissionGuard` 来验证权限
 - 通过 `createDynamicRouteGuard` 创建动态路由
 - 使用策略模式 `StrategyAction` 封装了权限验证逻辑

@@ -8,7 +8,7 @@ CI/CD 是指持续集成（Continuous Integration）和持续部署（Continuous
 
 ## 2. 通过定时任务实现自动化部署
 
-下面使用简单的定时任务来实现自动化部署，仅用于个人项目或测试。
+下面使用简单的定时任务来实现自动化部署，仅用于个人项目或测试。正式环境中请勿使用此方法，推荐使用成熟的 CI/CD 系统。
 
 首先，可用使用 `release.sh` 脚本来实现自动化编译并上传到服务器，脚本内容如下：
 
@@ -48,15 +48,47 @@ del dist.zip
 下面，我们在服务器上编写一个 `deploy.sh` 脚本，用于自动部署。我们以部署静态文件为例：
 
 ```bash
+pushd /home/admin/
 echo 'deploy static files ...'
 
-if [ -f "/home/admin/dist.zip" ];then
+if [ -f "dist.zip" ];then
   rm /usr/share/nginx/html/docs/* -rf
-  unzip -q -o /home/admin/dist.zip -d /usr/share/nginx/html/docs
-  rm /home/admin/dist.zip -rf
+  unzip -qo dist.zip -d /usr/share/nginx/html/docs
+  rm dist.zip -rf
 else
   echo "dist.zip not found!"
 fi
+```
+
+::: warning 文件不完整
+
+以上脚本存在问题，当上传未完成但文件存在时，会导致文件错误部署，另外，如果部署过程过长而导致两次部署任务重叠也会破坏任务。此时使用下面的脚本，给任务加锁，避免任务重叠。
+
+脚本中的 `sleep 60` 为了防止文件上传未完成就开始部署，可以根据实际情况调整。
+
+:::
+
+```bash
+pushd /home/admin/
+if [ -f "locked_deploy.sock" ];then
+  exit
+else
+  touch locked_deploy.sock
+fi
+
+echo 'deploy static files ...'
+
+if [ -f "dist.zip" ];then
+  sleep 60
+  rm /usr/share/nginx/html/docs/* -rf
+  unzip -qo dist.zip -d /usr/share/nginx/html/docs
+  rm dist.zip -rf
+else
+  echo "dist.zip not found!"
+fi
+
+rm locked_deploy.sock
+popd
 ```
 
 为了让脚本能定期运行，我们需要使用 `crontab` 命令计划定时任务，下面创建定时任务：
@@ -75,9 +107,9 @@ crontab -e
 
 现在，每次运行 `release.sh` 脚本后，都会自动部署到服务器上。
 
-## 3. 部署 Nuxt 项目
+## 3. 部署 Docker 项目
 
-下面我们部署 Nuxt 项目，此项目运行在 Docker 环境下，这是我们的 `Dockerfile` 文件：
+下面我们部署一个 Nuxt3 项目，此项目运行在 Docker 环境下，这是我们的 `Dockerfile` 文件：
 
 ```dockerfile
 FROM node:18.16.0-alpine3.17
@@ -100,10 +132,16 @@ CMD ["node", ".output/server/index.mjs"]
 我们的部署脚本 `deploy.sh` 如下：
 
 ```bash
-if [ -f "/home/admin/dist.zip" ];then
-  cd /home/admin
+pushd /home/admin/
+if [ -f "locked_deploy.sock" ];then
+  exit
+else
+  touch locked_deploy.sock
+fi
 
-  unzip -q -o dist.zip -d repo/.output
+if [ -f "dist.zip" ];then
+  sleep 60
+  unzip -qo dist.zip -d repo/.output
   docker stop test-nuxt-1
   docker rm test-nuxt-1
   docker rmi test-nuxt -f
@@ -118,6 +156,9 @@ if [ -f "/home/admin/dist.zip" ];then
 else
   echo 'not found!'
 fi
+
+rm locked_deploy.sock
+popd
 ```
 
 下面的步骤和上面的一样，设置好定时任务后，每次运行 `release.sh` 脚本后，都会自动部署到服务器上。

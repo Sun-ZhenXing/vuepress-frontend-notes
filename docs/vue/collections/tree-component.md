@@ -6,32 +6,26 @@
 
 ## 1. 实现原理
 
-本示例使用 `font-awesome` 作为图标库，如果你没有安装，可以使用下面的命令或 HTML 代码安装。
+本示例使用 `@iconify/vue` 作为图标库，如果你没有安装，可以使用下面的命令或 HTML 代码安装。
 
 ::: code-tabs
 
 @tab yarn
 
 ```bash
-yarn add font-awesome
+yarn add --dev @iconify/vue
 ```
 
 @tab npm
 
 ```bash
-npm install font-awesome
+npm install --save-dev @iconify/vue
 ```
 
 @tab pnpm
 
 ```bash
-pnpm add font-awesome
-```
-
-@tab CDN
-
-```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+pnpm add --save-dev @iconify/vue
 ```
 
 :::
@@ -52,7 +46,6 @@ pnpm add font-awesome
 
 <script setup lang="ts">
 import TreeTest from '@/components/TreeTest.vue'
-import 'font-awesome/css/font-awesome.css'
 import data from '@/data/test-tree.json'
 </script>
 

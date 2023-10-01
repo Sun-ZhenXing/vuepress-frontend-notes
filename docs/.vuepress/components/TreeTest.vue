@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { Icon } from '@iconify/vue'
 
 interface Node {
   name: string
@@ -17,11 +18,9 @@ const isShow = ref<boolean[]>([])
   <ul>
     <li v-for="item, i in props.items" :key="item.name">
       <div class="wrapper" @click="isShow[i] = !isShow[i]">
-        <i
-          v-if="item.children && item.children.length" class="fa" aria-hidden="true"
-          :class="isShow[i] ? 'fa-angle-down' : 'fa-angle-right'"
-        />
-        <i v-else class="fa fa-file-o" aria-hidden="true" />
+        <Icon v-if="item.children && item.children.length"
+          :icon="isShow[i] ? 'fluent:chevron-down-24-regular' : 'fluent:chevron-right-24-regular'" />
+        <Icon v-else icon="fluent:document-24-regular" />
         <span class="name">{{ item.name }}</span>
       </div>
       <div v-if="item.children && item.children.length" class="sub-tree">
@@ -40,13 +39,15 @@ li {
     padding: .2rem;
     cursor: pointer;
     border-radius: .2rem;
+    display: flex;
+    align-items: center;
   }
 
   .wrapper:hover {
     background-color: #f5f5f5;
   }
 
-  i {
+  svg {
     margin-right: 5px;
     width: 1.2rem;
   }

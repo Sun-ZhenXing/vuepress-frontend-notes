@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { Icon } from '@iconify/vue'
 
 interface Node {
   // 名称
@@ -39,19 +40,15 @@ function toggle(i: number) {
 <template>
   <ul>
     <li v-for="item, i in props.items" :key="item.name">
-      <div
-        class="wrapper" :class="{ tooltip: item.note }" :data-tooltip="`${item.name}: ${item.note}`"
-        @click="toggle(i)"
-      >
-        <i
-          v-if="item.children && item.children.length" class="fa" aria-hidden="true"
-          :class="(!!item.show !== !!isShow[i]) ? 'fa-angle-down' : 'fa-angle-right'"
-        />
-        <i v-else class="fa fa-file-o" aria-hidden="true" />
+      <div class="wrapper" :class="{ tooltip: item.note }" :data-tooltip="`${item.name}: ${item.note}`"
+        @click="toggle(i)">
+        <Icon v-if="item.children && item.children.length"
+          :icon="(!!item.show !== !!isShow[i]) ? 'fluent:chevron-down-24-regular' : 'fluent:chevron-right-24-regular'" />
+        <Icon v-else icon="fluent:document-24-regular" />
         <span class="name">{{ item.name }}</span>
         <span v-if="item.label" class="label">
           {{ item.label }}
-          <i v-if="item.note" class="fa fa-question-circle" />
+          <Icon v-if="item.note" icon="fluent:question-circle-24-regular" />
         </span>
       </div>
       <div v-if="item.children && item.children.length" class="sub-tree">
@@ -74,6 +71,10 @@ li {
 
   .wrapper {
     padding: .2rem;
+    cursor: pointer;
+    border-radius: .2rem;
+    display: flex;
+    align-items: center;
 
     &:hover {
       cursor: pointer;
@@ -81,7 +82,7 @@ li {
       border-radius: 10px;
     }
 
-    i {
+    svg {
       margin-right: 5px;
       padding-left: 10px;
       width: 1.2rem;

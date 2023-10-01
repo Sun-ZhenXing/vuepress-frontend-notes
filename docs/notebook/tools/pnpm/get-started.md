@@ -61,7 +61,6 @@ source /root/.bashrc
 
 <script setup lang="ts">
 import TreeNode from '@/components/TreeNode.vue'
-import 'font-awesome/css/font-awesome.css'
 const nested = [{
   "name": "node_modules",
   "show": true,
