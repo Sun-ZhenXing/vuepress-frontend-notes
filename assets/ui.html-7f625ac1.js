@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7bdabce7","path":"/nuxt/dependency-config/ui.html","title":"UI 框架","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1699515127000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"nuxt/dependency-config/ui.md"}');export{e as data};

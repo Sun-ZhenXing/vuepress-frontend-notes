@@ -1,0 +1,1 @@
+import{_ as t,o as n,c as a,b as e,d as c}from"./app-122c9ec0.js";const o={},s=e("h1",{id:"19-实现-instanceof",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#19-实现-instanceof","aria-hidden":"true"},"#"),c(" 19. 实现 instanceof")],-1),r=[s];function _(i,d){return n(),a("div",null,r)}const l=t(o,[["render",_],["__file","19-implement-instanceof.html.vue"]]);export{l as default};

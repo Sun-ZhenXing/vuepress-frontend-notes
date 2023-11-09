@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as s,b as e,d as c}from"./app-122c9ec0.js";const o={},n=e("h1",{id:"ui-框架",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#ui-框架","aria-hidden":"true"},"#"),c(" UI 框架")],-1),r=e("nav",{class:"table-of-contents"},[e("ul")],-1),_=[n,r];function i(d,l){return a(),s("div",null,_)}const u=t(o,[["render",i],["__file","ui.html.vue"]]);export{u as default};
