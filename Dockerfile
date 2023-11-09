@@ -1,5 +1,5 @@
 # Builder
-FROM node:18.17.0-bullseye-slim as builder
+FROM node:20.9.0-bookworm as builder
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ RUN npm -v \
     && pnpm build
 
 # Nginx Server
-FROM nginx:1.25.2-alpine3.18-slim
+FROM nginx:1.25.3-alpine3.18-slim
 
 WORKDIR /usr/share/nginx/html/vuepress-frontend-notes/
 

@@ -9,6 +9,7 @@ Sass 是一款强化 CSS 的辅助工具，它在 CSS 语法的基础上增加�
 [^1]: Sass 中文文档，www.sass.hk，<https://www.sass.hk/docs/>
 
 Sass 的特点：
+
 - 完全兼容 CSS3
 - 在 CSS 基础上增加变量、嵌套、混合等功能
 - 通过函数进行颜色值与属性值的运算
@@ -323,7 +324,6 @@ $sizes: 40px, 50px, 80px;
 ```
 
 :::
-
 
 后续我们将学习函数指令 `@function`，这就像写 JavaScript 程序一样能够控制变量的值。
 

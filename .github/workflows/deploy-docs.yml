@@ -3,28 +3,16 @@ name: Deploy Docs
 on:
   push:
     branches:
-      # make sure this is the branch you are using
       - main
 
 jobs:
-  create-diagram:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Update diagram
-        uses: githubocto/repo-visualizer@main
-        with:
-          excluded_paths: ".github,.vscode"
   deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # if your docs needs submodules, uncomment the following line
-          # submodules: true
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
@@ -33,7 +21,7 @@ jobs:
           run_install: true
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: pnpm
@@ -48,7 +36,5 @@ jobs:
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # This is the branch where the docs are deployed to
           branch: gh-pages
           folder: docs/.vuepress/dist
-

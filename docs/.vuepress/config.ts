@@ -6,6 +6,7 @@ import { copyCodePlugin } from 'vuepress-plugin-copy-code2'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { autoCatalogPlugin } from 'vuepress-plugin-auto-catalog'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
+import { slug as slugify } from 'github-slugger'
 
 const __dirname = getDirname(import.meta.url)
 const isProd = process.env.NODE_ENV === 'production'
@@ -29,7 +30,11 @@ export default defineUserConfig({
     importCode: {
       handleImportPath: str => str
         .replace(/^\//, ROOT_PATH.replace(/(?:|\\|\/)$/, '/'))
-        .replace(/^@/, CURRENT_PATH),
+        .replace(/^@\//, CURRENT_PATH.replace(/(?:|\\|\/)$/, '/')),
+    },
+    anchor: {
+      level: [1, 2, 3, 4, 5, 6],
+      slugify,
     },
   },
   theme: defaultTheme({
@@ -71,9 +76,9 @@ export default defineUserConfig({
       card: true,
       codetabs: true,
       include: {
-        resolvePath: (file) => {
-          if (file.startsWith('@'))
-            return file.replace('@', CURRENT_PATH)
+        resolvePath: file => {
+          if (file.startsWith('@/'))
+            return file.replace(/^@\//, CURRENT_PATH)
           if (file.startsWith('/'))
             return file.replace(/^\//, ROOT_PATH.replace(/(?:|\\|\/)$/, '/'))
           return file
@@ -87,7 +92,6 @@ export default defineUserConfig({
       mark: true,
       imgLazyload: true,
       tasklist: true,
-      linkify: false,
       katex: {
         copy: true,
       },

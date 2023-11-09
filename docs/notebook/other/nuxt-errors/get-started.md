@@ -120,5 +120,5 @@ Nuxt 的文档显然是 Nuxt 做的，但是官方 GitHub 里面没有一个配�
 - 使用 `process.env.NODE_ENV === 'development'` 判断是否为开发环境
 - 使用 `process.env.NODE_ENV === 'production'` 判断是否为生产环境
 - 可以在 `nuxt.config.ts` 中使用 `runtimeConfig.public` 指定特殊变量
-    - 如 `buildTime: Date.now()` 表示打包时间
-    - 如 `version: require('./package.json').version` 表示版本号
+  - 如 `buildTime: Date.now()` 表示打包时间
+  - 如 `version: require('./package.json').version` 表示版本号

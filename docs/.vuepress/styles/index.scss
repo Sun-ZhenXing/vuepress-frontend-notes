@@ -11,17 +11,6 @@
     }
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    padding-top: 0;
-  }
-
   // optimize: code
   code {
     padding: 0.25rem 0.15rem;
@@ -55,6 +44,17 @@
   section.footnotes .footnote-item {
     margin: 0;
     padding: 0;
+  }
+}
+
+// fix: copy katex code when selected
+.katex {
+  * {
+    user-select: none;
+  }
+
+  annotation {
+    user-select: all;
   }
 }
 

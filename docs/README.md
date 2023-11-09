@@ -14,6 +14,4 @@ footer: '前端笔记合集，由 <a href="https://github.com/Sun-ZhenXing/" tar
 
 # 前端笔记合集
 
-<!-- markdownlint-disable MD033 -->
-
 <AutoCatalog />
