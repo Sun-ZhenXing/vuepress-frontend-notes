@@ -25,7 +25,7 @@ export default defineUserConfig({
   base: BASE_PATH,
   markdown: {
     code: {
-      lineNumbers: 10,
+      lineNumbers: 20,
     },
     importCode: {
       handleImportPath: str => str
