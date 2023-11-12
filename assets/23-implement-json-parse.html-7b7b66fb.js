@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as t,b as e,d as r}from"./app-e90f017f.js";const n={},o=e("h1",{id:"23-实现-jsonparse",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#23-实现-jsonparse","aria-hidden":"true"},"#"),r(" 23. 实现 JSON.parse")],-1),c=[o];function _(d,i){return a(),t("div",null,c)}const h=s(n,[["render",_],["__file","23-implement-json-parse.html.vue"]]);export{h as default};

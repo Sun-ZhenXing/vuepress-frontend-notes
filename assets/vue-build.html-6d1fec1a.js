@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7588fe24","path":"/vue/collections/vue-build.html","title":"Vue 发行版本文件含义","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1699773694000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"vue/collections/vue-build.md"}');export{e as data};

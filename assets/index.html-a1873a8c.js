@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-323212b0","path":"/notebook/tools/tampermonkey/","title":"篡改猴（油猴）","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1699773694000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/tools/tampermonkey/index.md"}');export{e as data};

@@ -1,0 +1,1 @@
+import{_ as t,o as c,c as o,b as e,d as a}from"./app-e90f017f.js";const s={},n=e("h1",{id:"图标库",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#图标库","aria-hidden":"true"},"#"),a(" 图标库")],-1),r=e("nav",{class:"table-of-contents"},[e("ul")],-1),_=[n,r];function d(i,l){return c(),o("div",null,_)}const f=t(s,[["render",d],["__file","icon.html.vue"]]);export{f as default};

@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as o,b as e,d as r}from"./app-e90f017f.js";const c={},s=e("h1",{id:"4-编辑图片并保存",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#4-编辑图片并保存","aria-hidden":"true"},"#"),r(" 4. 编辑图片并保存")],-1),_=[s];function d(n,i){return a(),o("div",null,_)}const l=t(c,[["render",d],["__file","4-image-editor.html.vue"]]);export{l as default};
