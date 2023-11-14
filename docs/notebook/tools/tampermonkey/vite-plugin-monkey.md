@@ -1,4 +1,4 @@
-# Vite 开发油猴脚本
+# Vite 开发 Tampermonkey 脚本
 
 [[TOC]]
 
@@ -31,6 +31,32 @@ pnpm add -D vite-plugin-monkey
 下面我们使用 Vue + TypeScript 模板开发一个油猴脚本。使用其他模板与之类似，如果你没有复杂的需求可以使用 Vanilla 模板。
 
 ### 2.1 配置
+
+如果你希望脚本尽可能早地执行，例如你希望替换内置变量实现拦截网络请求，可以配置 `@run-at` 为 `document-start`。但是这样会出现一个问题，由于脚本是在 `DOMContentLoaded` 之前执行的，所以无法获取到 `unsafeWindow.document` 对象。
+
+所以我们在页面 DOM 准备好时再挂载 Vue 实例，这样可以确保脚本能正常执行。
+
+```ts
+import { createApp } from 'vue'
+import App from './App.vue'
+
+async function main() {
+  await new Promise((resolve) => {
+    if (unsafeWindow.document.readyState === 'complete')
+      resolve(undefined)
+    else
+      unsafeWindow.window.addEventListener('load', resolve)
+  })
+  const app = unsafeWindow.document.createElement('div')
+  app.setAttribute('id', 'my-tamper-app')
+  unsafeWindow.document.body.append(app)
+  return app
+}
+
+createApp(App).mount(await main())
+```
+
+这样脚本仍然会在进入页面时立即执行 `mount()` 之前的代码，然后等待页面 DOM 准备好时再执行 `mount()` 挂载 Vue 实例。
 
 ### 2.2 CDN 引入
 
@@ -169,7 +195,7 @@ import { ref } from 'vue'
 import { useMonkeyStore } from './useMonkeyStore'
 
 /**
- * 全局激活状态，但是不会持久化
+ * 全局状态，但是不会持久化
  */
 export const useActivated = createGlobalState(() => {
   return {
@@ -192,9 +218,26 @@ export const DefaultConfig = {
  */
 export const useConfig = createGlobalState(() => {
   return {
-    options: useMonkeyStore('my-options', DefaultConfig),
+    options: useMonkeyStore('myOptions', DefaultConfig),
   }
 })
+```
+
+或者我们创建一个通用的钩子：
+
+```ts
+/**
+ * Tampermonkey 全局存储状态钩子
+ * @param key 存储键名称
+ * @param defaultValue 默认值
+ * @param exportName 导出名称，如果不填则默认为 `key`
+ * @returns 导出的 `{ [exportName ?? key]: ref }`
+ */
+export function useGlobalState<T>(key: string, defaultValue?: T, exportName?: string | symbol) {
+  return createGlobalState(() => {
+    return { [exportName ?? key]: useMonkeyStore(key, defaultValue) }
+  })()
+}
 ```
 
 注意这种响应式只能在同一个网页实现响应式，在不同网页想要实现响应需要，请继续看下面的监听变量的实现。
@@ -205,25 +248,45 @@ export const useConfig = createGlobalState(() => {
 
 如果你希望开发一个可以拖拽的工具包，悬浮于目标网页之上，那么你很可能需要 `useDraggable` 钩子，它可以让你的元素拖拽起来。
 
-下面的实现和 `@vueuse/core` 中的 `useDraggable` 钩子有点不同，它的目标元素和被拖拽元素是分开的，这样可以让你的元素拖拽起来更加灵活。
+推荐使用 [`@vueuse/core`](https://vueuse.org/) 中的 [`useDraggable`](https://vueuse.org/core/useDraggable/) 钩子，它可以让你的元素拖拽起来。
+
+```ts
+const { x, y, style } = useDraggable(target, {
+  preventDefault: true,
+  draggingElement: unsafeWindow,
+  handle,
+})
+```
+
+- `target`：被移动的目标元素
+- `options.preventDefault`：是否阻止默认事件
+- `options.draggingElement`：指定为目标窗口
+- `options.handle`：被拖拽的元素，默认为 `target`
+- 其他参数参见 [useDraggable](https://vueuse.org/core/useDraggable/) 文档
+
+需要将 `style` 绑定到目标元素的 `style` 属性上，且需要设置 `position: absolute` 或 `position: fixed`。
+
+下面是作者自己实现的 `useDraggable` 钩子，更简单容易理解，与框架无关。
+
+::: details useDraggable.ts
 
 通过调用 `destroy()` 方法可以销毁事件监听器。
 
 ```ts
 /**
  * 支持元素拖拽
- * @param draggableElement 可拖拽元素
+ * @param handleElement 可拖拽元素
  * @param targetElement 被拖拽目标元素，需要 `position: absolute` 或 `position: fixed`
  * @param doc 事件监听器所在的文档
  * @param initX 初始位置 `x` (px)
  * @param initY 初始位置 `y` (px)
  */
-export function useDraggable(draggableElement: HTMLElement, targetElement: HTMLElement, doc: Document, initX?: number, initY?: number) {
+export function useDraggable(handleElement: HTMLElement, targetElement: HTMLElement, doc: Document, initX?: number, initY?: number) {
   let offsetX = 0
   let offsetY = 0
 
   // 当鼠标按下时，开始拖拽
-  draggableElement.addEventListener('mousedown', dragStart)
+  handleElement.addEventListener('mousedown', dragStart)
 
   function dragStart(event: MouseEvent) {
     event.preventDefault()
@@ -254,7 +317,7 @@ export function useDraggable(draggableElement: HTMLElement, targetElement: HTMLE
 
   // 销毁时移除事件监听器
   function destroy() {
-    draggableElement.removeEventListener('mousedown', dragStart)
+    handleElement.removeEventListener('mousedown', dragStart)
   }
 
   return {
@@ -262,6 +325,8 @@ export function useDraggable(draggableElement: HTMLElement, targetElement: HTMLE
   }
 }
 ```
+
+:::
 
 ### 3.4 网络请求
 
