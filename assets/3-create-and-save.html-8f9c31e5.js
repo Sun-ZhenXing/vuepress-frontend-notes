@@ -1,1 +1,0 @@
-import{_ as a,o as t,c,b as e,d as r}from"./app-e90f017f.js";const s={},n=e("h1",{id:"3-创建和保存文件",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#3-创建和保存文件","aria-hidden":"true"},"#"),r(" 3. 创建和保存文件")],-1),o=[n];function _(d,i){return t(),c("div",null,o)}const l=a(s,[["render",_],["__file","3-create-and-save.html.vue"]]);export{l as default};

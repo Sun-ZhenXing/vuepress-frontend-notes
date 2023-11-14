@@ -1,1 +1,0 @@
-import{_ as t,r as o,o as n,c,a as r,b as e,d as s}from"./app-e90f017f.js";const d={},_=e("h1",{id:"pnpm",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#pnpm","aria-hidden":"true"},"#"),s(" pnpm")],-1);function l(i,p){const a=o("AutoCatalog");return n(),c("div",null,[_,r(a)])}const h=t(d,[["render",l],["__file","index.html.vue"]]);export{h as default};
