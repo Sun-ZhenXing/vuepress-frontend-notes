@@ -73,7 +73,6 @@ export default defineUserConfig({
       container: true,
       vPre: true,
       tabs: true,
-      card: true,
       codetabs: true,
       include: {
         resolvePath: file => {
@@ -119,7 +118,7 @@ export default defineUserConfig({
             if (tag === 'em') {
               return {
                 tag: 'Badge',
-                attrs: { type: 'warning' },
+                attrs: { type: 'warning', style: 'user-select: none;' },
                 content: content.substring(6),
               }
             }

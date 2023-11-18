@@ -277,13 +277,14 @@ const { x, y, style } = useDraggable(target, {
  * 支持元素拖拽
  * @param handleElement 可拖拽元素
  * @param targetElement 被拖拽目标元素，需要 `position: absolute` 或 `position: fixed`
- * @param doc 事件监听器所在的文档
+ * @param draggingDoc 事件监听器所在的文档
  * @param initX 初始位置 `x` (px)
  * @param initY 初始位置 `y` (px)
  */
-export function useDraggable(handleElement: HTMLElement, targetElement: HTMLElement, doc: Document, initX?: number, initY?: number) {
+export function useDraggable(handleElement: HTMLElement, targetElement: HTMLElement, draggingDoc?: Document, initX?: number, initY?: number) {
   let offsetX = 0
   let offsetY = 0
+  let doc = draggingDoc ?? globalThis.document
 
   // 当鼠标按下时，开始拖拽
   handleElement.addEventListener('mousedown', dragStart)
@@ -360,11 +361,52 @@ export async function request<T extends MyParams>(params: T): Promise<Response> 
 
 由于部分 Cookie 是 `HttpOnly` 的，无法通过 `document.cookie` 获取。因此使用自定义的 `GM_xmlhttpRequest()` 并不能模拟当前网页的请求，因为受保护的 Cookie 脚本是无法获取的。
 
-```ts
+### 3.5 模拟表单输入
 
+由于现在许多网站都使用了 React 或 Vue，所以直接设置表单元素的值可能无效，不会被响应式系统接收到，所以我们需要模拟输入。
+
+```ts
+export interface ReactInputDom extends HTMLInputElement {
+  _valueTracker: {
+    setValue(value: string): void
+  }
+}
+
+/**
+ * 模拟输入框操作
+ * @param inputDom 输入 DOM
+ * @param text 修改的文本
+ */
+export function simulateInputValue(inputDom: HTMLTextAreaElement | HTMLInputElement, text: string) {
+  const lastValue = inputDom.value
+  inputDom.value = text
+  const event = new Event('input', { bubbles: true })
+
+  // For React
+  const tracker = (inputDom as ReactInputDom)._valueTracker
+  if (tracker)
+    tracker.setValue(lastValue)
+
+  inputDom.dispatchEvent(event)
+}
+
+/**
+ * 模拟键盘回车
+ */
+export function simulateEnter(inputDom: HTMLTextAreaElement | HTMLInputElement) {
+  const event: KeyboardEvent = new KeyboardEvent('keydown', {
+    bubbles: true,
+    cancelable: true,
+    key: 'Enter',
+    code: 'Enter',
+    charCode: 13,
+    keyCode: 13,
+  })
+  inputDom.dispatchEvent(event)
+}
 ```
 
-### 3.5 拦截请求
+### 3.6 拦截请求
 
 一般拦截请求都是靠重写 `XMLHttpRequest` 对象和 `fetch` 方法来实现的，所以这种方法只能拦截 Ajax 请求，不能拦截 `document` / `script` / `ws` 等请求。
 

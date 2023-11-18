@@ -8,6 +8,16 @@
 
 ## 2. 使用开放的用户脚本
 
+下面这几个平台是寻找用户脚本的绝佳选择：
+
+- [Greasy Fork](https://greasyfork.org/)
+- [Userscript.Zone](https://www.userscript.zone/)
+- [OpenUserJS](https://openuserjs.org/)
+
+可以搜索你需要的脚本，然后点击安装即可。
+
+注意用户脚本能代替你操作，还可能窃取你的授权或隐式信息。因此你应该只从受信任的渠道安装脚本。
+
 ## 3. 编写脚本
 
 ```js
