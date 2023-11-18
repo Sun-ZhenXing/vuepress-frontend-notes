@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as s,b as e,d as c}from"./app-rPvAhQef.js";const o={},r=e("h1",{id:"2-获取并操作文件对象",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#2-获取并操作文件对象","aria-hidden":"true"},"#"),c(" 2. 获取并操作文件对象")],-1),_=[r];function n(d,i){return a(),s("div",null,_)}const h=t(o,[["render",n],["__file","2-get-files.html.vue"]]);export{h as default};

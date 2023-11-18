@@ -1,1 +1,0 @@
-import{_ as t,o as a,c,b as e,d as n}from"./app-a0d7238b.js";const r={},d=e("h1",{id:"6-打开本地文件夹并获得句柄",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#6-打开本地文件夹并获得句柄","aria-hidden":"true"},"#"),n(" 6. 打开本地文件夹并获得句柄")],-1),o=[d];function s(_,i){return a(),c("div",null,o)}const h=t(r,[["render",s],["__file","6-get-dict-and-handler.html.vue"]]);export{h as default};
