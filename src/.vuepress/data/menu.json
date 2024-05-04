@@ -1,0 +1,2178 @@
+[
+  {
+    "name": ".github/",
+    "label": "GitHub 相关配置",
+    "children": [
+      {
+        "name": "ISSUE_TEMPLATE/",
+        "label": "Issue 模板",
+        "children": [
+          {
+            "name": "bug-report.yaml"
+          }
+        ]
+      },
+      {
+        "name": "workflows/",
+        "label": "GitHub Actions 配置",
+        "children": [
+          {
+            "name": "linter.yml"
+          },
+          {
+            "name": "release.yml"
+          }
+        ]
+      },
+      {
+        "name": "PULL_REQUEST_TEMPLATE.md",
+        "label": "Pull Request 模板"
+      }
+    ]
+  },
+  {
+    "name": ".vscode/",
+    "label": "VS Code 相关配置",
+    "children": [
+      {
+        "name": "extensions.json",
+        "label": "VS Code 推荐插件"
+      },
+      {
+        "name": "launch.json",
+        "label": "VS Code 调试配置"
+      },
+      {
+        "name": "settings.json",
+        "label": "VS Code 设置"
+      }
+    ]
+  },
+  {
+    "name": "build/",
+    "label": "构建相关",
+    "children": [
+      {
+        "name": "config/",
+        "label": "构建打包配置",
+        "children": [
+          {
+            "name": "define.ts",
+            "label": "定义的全局常量，通过 Vite 构建时注入"
+          },
+          {
+            "name": "index.ts",
+            "label": "入口文件"
+          },
+          {
+            "name": "proxy.ts",
+            "label": "网络请求代理"
+          }
+        ]
+      },
+      {
+        "name": "plugins/",
+        "label": "构建插件",
+        "children": [
+          {
+            "name": "compress.ts",
+            "label": "代码压缩插件"
+          },
+          {
+            "name": "html.ts",
+            "label": "HTML 插件",
+            "note": "用于注入变量、压缩代码等"
+          },
+          {
+            "name": "index.ts",
+            "label": "入口文件"
+          },
+          {
+            "name": "mock.ts",
+            "label": "Mock 插件"
+          },
+          {
+            "name": "pwa.ts",
+            "label": "PWA 插件"
+          },
+          {
+            "name": "unplugin.ts",
+            "label": "Unplugin 插件",
+            "note": "自动导入 UI 组件、自动解析 iconify 图标、自动解析本地 SVG 作为图标"
+          },
+          {
+            "name": "visualizer.ts",
+            "label": "构建的依赖大小占比分析插件"
+          }
+        ]
+      },
+      {
+        "name": "utils/",
+        "label": "构建工具相关函数",
+        "children": [
+          {
+            "name": "index.ts",
+            "label": "入口文件"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "label": "入口文件"
+      }
+    ]
+  },
+  {
+    "name": "docker/",
+    "label": "Docker 配置",
+    "children": [
+      {
+        "name": ".dockerignore",
+        "label": "Docker 忽略文件"
+      },
+      {
+        "name": "Dockerfile",
+        "label": "Docker 配置文件"
+      },
+      {
+        "name": "nginx.conf",
+        "label": "Nginx 配置文件"
+      }
+    ]
+  },
+  {
+    "name": "mock/",
+    "label": "Mock 相关",
+    "children": [
+      {
+        "name": "api/",
+        "label": "Mock API 接口",
+        "children": [
+          {
+            "name": "auth.ts"
+          },
+          {
+            "name": "index.ts"
+          },
+          {
+            "name": "management.ts"
+          },
+          {
+            "name": "route.ts"
+          }
+        ]
+      },
+      {
+        "name": "model/",
+        "label": "Mock 数据",
+        "children": [
+          {
+            "name": "auth.ts"
+          },
+          {
+            "name": "index.ts"
+          },
+          {
+            "name": "route.ts"
+          }
+        ]
+      },
+      {
+        "name": "index.ts"
+      }
+    ]
+  },
+  {
+    "name": "patches/",
+    "label": "补丁文件",
+    "children": [
+      {
+        "name": "mockjs@1.1.0.patch",
+        "label": "Mock 补丁文件"
+      }
+    ]
+  },
+  {
+    "name": "public/",
+    "label": "公共文件",
+    "children": [
+      {
+        "name": "favicon.svg",
+        "label": "网页图标 Favicon"
+      },
+      {
+        "name": "logo.png",
+        "label": "系统 Logo"
+      }
+    ]
+  },
+  {
+    "name": "scripts/",
+    "label": "脚本文件",
+    "children": [
+      {
+        "name": "logo.ts",
+        "label": "处理 SVG 文件，用于生成 Logo"
+      }
+    ]
+  },
+  {
+    "name": "src/",
+    "label": "源代码",
+    "children": [
+      {
+        "name": "assets/",
+        "label": "静态资源",
+        "children": [
+          {
+            "name": "fonts/",
+            "label": "字体文件",
+            "children": [
+              {
+                "name": "aguazyuan-bold.ttf"
+              },
+              {
+                "name": "aguazyuan-light.ttf"
+              },
+              {
+                "name": "aguazyuan-regular.ttf"
+              }
+            ]
+          },
+          {
+            "name": "svg-icon/",
+            "label": "SVG 图标",
+            "children": [
+              {
+                "name": "activity.svg"
+              },
+              {
+                "name": "at-sign.svg"
+              },
+              {
+                "name": "avatar.svg"
+              },
+              {
+                "name": "banner.svg"
+              },
+              {
+                "name": "cast.svg"
+              },
+              {
+                "name": "chrome.svg"
+              },
+              {
+                "name": "copy.svg"
+              },
+              {
+                "name": "custom-icon.svg"
+              },
+              {
+                "name": "empty-data.svg"
+              },
+              {
+                "name": "heart.svg"
+              },
+              {
+                "name": "logo-fill.svg"
+              },
+              {
+                "name": "logo.svg"
+              },
+              {
+                "name": "network-error.svg"
+              },
+              {
+                "name": "no-icon.svg"
+              },
+              {
+                "name": "no-permission.svg"
+              },
+              {
+                "name": "not-found.svg"
+              },
+              {
+                "name": "service-error.svg"
+              },
+              {
+                "name": "wind.svg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "components/",
+        "label": "组件",
+        "children": [
+          {
+            "name": "business/",
+            "label": "业务相关组件",
+            "children": [
+              {
+                "name": "loading-empty-wrapper.vue"
+              },
+              {
+                "name": "login-agreement.vue"
+              }
+            ]
+          },
+          {
+            "name": "common/",
+            "label": "公共组件",
+            "children": [
+              {
+                "name": "app-loading.vue"
+              },
+              {
+                "name": "dark-mode-container.vue"
+              },
+              {
+                "name": "dark-mode-switch.vue"
+              },
+              {
+                "name": "exception-base.vue"
+              },
+              {
+                "name": "hover-container.vue"
+              },
+              {
+                "name": "naive-provider.vue"
+              },
+              {
+                "name": "system-logo.vue"
+              }
+            ]
+          },
+          {
+            "name": "custom/",
+            "label": "自定义组件",
+            "children": [
+              {
+                "name": "better-scroll.vue"
+              },
+              {
+                "name": "count-to.vue"
+              },
+              {
+                "name": "github-link.vue"
+              },
+              {
+                "name": "icon-select.vue"
+              },
+              {
+                "name": "image-verify.vue"
+              },
+              {
+                "name": "svg-icon.vue"
+              },
+              {
+                "name": "web-site-link.vue"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "composables/",
+        "label": "组合式 API",
+        "note": "组合式函数，状态包含从外部引入的状态 + 内部状态",
+        "children": [
+          {
+            "name": "echarts.ts",
+            "label": "ECharts"
+          },
+          {
+            "name": "events.ts",
+            "label": "事件"
+          },
+          {
+            "name": "icon.ts",
+            "label": "图标渲染"
+          },
+          {
+            "name": "index.ts",
+            "label": "入口文件"
+          },
+          {
+            "name": "layout.ts",
+            "label": "布局"
+          },
+          {
+            "name": "router.ts",
+            "label": "路由"
+          },
+          {
+            "name": "system.ts",
+            "label": "系统"
+          }
+        ]
+      },
+      {
+        "name": "config/",
+        "label": "全局常量配置",
+        "children": [
+          {
+            "name": "index.ts",
+            "label": "入口文件"
+          },
+          {
+            "name": "map-sdk.ts",
+            "label": "地图插件的 SDK 配置"
+          },
+          {
+            "name": "regexp.ts",
+            "label": "常用的正则表达式"
+          },
+          {
+            "name": "service.ts",
+            "label": "请求相关配置"
+          }
+        ]
+      },
+      {
+        "name": "constants/",
+        "label": "全局常量声明",
+        "children": [
+          {
+            "name": "business.ts"
+          },
+          {
+            "name": "common.ts"
+          },
+          {
+            "name": "index.ts"
+          },
+          {
+            "name": "system.ts"
+          }
+        ]
+      },
+      {
+        "name": "context/",
+        "label": "上下文状态",
+        "children": [
+          {
+            "name": "demo.ts"
+          },
+          {
+            "name": "index.ts"
+          }
+        ]
+      },
+      {
+        "name": "directives/",
+        "label": "Vue 自定义指令",
+        "children": [
+          {
+            "name": "index.ts",
+            "label": "入口文件"
+          },
+          {
+            "name": "login.ts",
+            "label": "登录指令",
+            "note": "用于控制登录后才能显示的内容"
+          },
+          {
+            "name": "network.ts",
+            "label": "网络检测指令",
+            "note": "用于控制网络正常后才能显示的内容，断网后不显示"
+          },
+          {
+            "name": "permission.ts",
+            "label": "权限指令",
+            "note": "用于控制权限，指定权限后才能显示的内容"
+          }
+        ]
+      },
+      {
+        "name": "hooks/",
+        "label": "组合式的函数钩子",
+        "note": "状态从函数里面产生",
+        "children": [
+          {
+            "name": "business/",
+            "label": "业务相关钩子",
+            "children": [
+              {
+                "name": "index.ts",
+                "label": "入口文件"
+              },
+              {
+                "name": "use-count-down.ts",
+                "label": "倒计时",
+                "note": "此倒计时不是精准的倒计时，遇到对时间敏感的相关业务请自行实现"
+              },
+              {
+                "name": "use-image-verify.ts",
+                "label": "图片验证码",
+                "note": "此功能建议后端实现"
+              },
+              {
+                "name": "use-sms-code.ts",
+                "label": "短信验证码"
+              },
+              {
+                "name": "use-table.ts",
+                "label": "表格"
+              }
+            ]
+          },
+          {
+            "name": "common/",
+            "label": "通用钩子",
+            "children": [
+              {
+                "name": "index.ts",
+                "label": "入口文件"
+              },
+              {
+                "name": "use-boolean.ts",
+                "label": "布尔值"
+              },
+              {
+                "name": "use-context.ts",
+                "label": "上下文"
+              },
+              {
+                "name": "use-loading-empty.ts",
+                "label": "加载中和空状态"
+              },
+              {
+                "name": "use-loading.ts",
+                "label": "加载中"
+              },
+              {
+                "name": "use-reload.ts",
+                "label": "重新加载"
+              }
+            ]
+          },
+          {
+            "name": "index.ts",
+            "label": "入口文件"
+          }
+        ]
+      },
+      {
+        "name": "layouts/",
+        "label": "布局",
+        "children": [
+          {
+            "name": "basic-layout/",
+            "label": "基础布局",
+            "note": "包含全局头部、多页签、侧边栏、底部等公共部分",
+            "children": [
+              {
+                "name": "index.vue"
+              }
+            ]
+          },
+          {
+            "name": "blank-layout/",
+            "label": "空白布局",
+            "children": [
+              {
+                "name": "index.vue"
+              }
+            ]
+          },
+          {
+            "name": "common/",
+            "label": "公共布局",
+            "note": "全局头部、多页签、侧边栏、底部等公共部分组件",
+            "children": [
+              {
+                "name": "global-content/",
+                "label": "全局主体内容",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "global-footer/",
+                "label": "全局底部",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "global-header/",
+                "label": "全局头部",
+                "children": [
+                  {
+                    "name": "components/",
+                    "children": [
+                      {
+                        "name": "full-screen.vue"
+                      },
+                      {
+                        "name": "github-site.vue"
+                      },
+                      {
+                        "name": "global-breadcrumb.vue"
+                      },
+                      {
+                        "name": "header-menu.vue"
+                      },
+                      {
+                        "name": "index.ts"
+                      },
+                      {
+                        "name": "menu-collapse.vue"
+                      },
+                      {
+                        "name": "message-list.vue"
+                      },
+                      {
+                        "name": "setting-button.vue"
+                      },
+                      {
+                        "name": "system-message.vue"
+                      },
+                      {
+                        "name": "theme-mode.vue"
+                      },
+                      {
+                        "name": "user-avatar.vue"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "global-logo/",
+                "label": "全局 Logo",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "global-search/",
+                "label": "全局搜索",
+                "children": [
+                  {
+                    "name": "components/",
+                    "children": [
+                      {
+                        "name": "index.ts"
+                      },
+                      {
+                        "name": "search-footer.vue"
+                      },
+                      {
+                        "name": "search-modal.vue"
+                      },
+                      {
+                        "name": "search-result.vue"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "global-sider/",
+                "label": "全局侧边栏",
+                "children": [
+                  {
+                    "name": "components/",
+                    "children": [
+                      {
+                        "name": "vertical-mix-sider/",
+                        "children": [
+                          {
+                            "name": "components/",
+                            "children": [
+                              {
+                                "name": "index.ts"
+                              },
+                              {
+                                "name": "mix-menu-collapse.vue"
+                              },
+                              {
+                                "name": "mix-menu-detail.vue"
+                              },
+                              {
+                                "name": "mix-menu-drawer.vue"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "vertical-sider/",
+                        "children": [
+                          {
+                            "name": "components/",
+                            "children": [
+                              {
+                                "name": "index.ts"
+                              },
+                              {
+                                "name": "vertical-menu.vue"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "index.ts"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "global-tab/",
+                "label": "全局多页签",
+                "children": [
+                  {
+                    "name": "components/",
+                    "children": [
+                      {
+                        "name": "reload-button/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "tab-detail/",
+                        "children": [
+                          {
+                            "name": "components/",
+                            "children": [
+                              {
+                                "name": "context-menu.vue"
+                              },
+                              {
+                                "name": "index.ts"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "index.ts"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "setting-drawer/",
+                "label": "项目配置抽屉",
+                "children": [
+                  {
+                    "name": "components/",
+                    "children": [
+                      {
+                        "name": "dark-mode/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "drawer-button/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "layout-mode/",
+                        "children": [
+                          {
+                            "name": "components/",
+                            "children": [
+                              {
+                                "name": "index.ts"
+                              },
+                              {
+                                "name": "layout-card.vue"
+                              },
+                              {
+                                "name": "layout-checkbox.vue"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "page-func/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "page-view/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "setting-menu/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "theme-color-select/",
+                        "children": [
+                          {
+                            "name": "components/",
+                            "children": [
+                              {
+                                "name": "color-checkbox.vue"
+                              },
+                              {
+                                "name": "color-modal.vue"
+                              },
+                              {
+                                "name": "index.ts"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "theme-config/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "index.ts"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "index.ts"
+              }
+            ]
+          },
+          {
+            "name": "index.ts"
+          }
+        ]
+      },
+      {
+        "name": "locales/",
+        "label": "国际化配置",
+        "children": [
+          {
+            "name": "lang/",
+            "children": [
+              {
+                "name": "en.ts"
+              },
+              {
+                "name": "index.ts"
+              },
+              {
+                "name": "zh-cn.ts"
+              }
+            ]
+          },
+          {
+            "name": "i18n.ts"
+          },
+          {
+            "name": "index.ts"
+          }
+        ]
+      },
+      {
+        "name": "plugins/",
+        "label": "插件",
+        "children": [
+          {
+            "name": "assets.ts",
+            "label": "静态资源导入",
+            "note": "各种依赖的静态资源导入，如 CSS、SCSS 等"
+          },
+          {
+            "name": "index.ts"
+          }
+        ]
+      },
+      {
+        "name": "router/",
+        "label": "路由",
+        "children": [
+          {
+            "name": "guard/",
+            "label": "路由守卫",
+            "children": [
+              {
+                "name": "dynamic.ts",
+                "label": "动态路由"
+              },
+              {
+                "name": "index.ts",
+                "label": "入口文件"
+              },
+              {
+                "name": "permission.ts",
+                "label": "权限"
+              }
+            ]
+          },
+          {
+            "name": "helpers/",
+            "label": "路由相关的辅助函数",
+            "children": [
+              {
+                "name": "index.ts"
+              },
+              {
+                "name": "scroll.ts"
+              }
+            ]
+          },
+          {
+            "name": "modules/",
+            "label": "静态模式的路由数据",
+            "children": [
+              {
+                "name": "about.ts"
+              },
+              {
+                "name": "auth-demo.ts"
+              },
+              {
+                "name": "component.ts"
+              },
+              {
+                "name": "dashboard.ts"
+              },
+              {
+                "name": "document.ts"
+              },
+              {
+                "name": "exception.ts"
+              },
+              {
+                "name": "function.ts"
+              },
+              {
+                "name": "index.ts"
+              },
+              {
+                "name": "management.ts"
+              },
+              {
+                "name": "multi-menu.ts"
+              },
+              {
+                "name": "plugin.ts"
+              }
+            ]
+          },
+          {
+            "name": "routes/",
+            "label": "声明的固定路由",
+            "children": [
+              {
+                "name": "index.ts"
+              }
+            ]
+          },
+          {
+            "name": "index.ts"
+          }
+        ]
+      },
+      {
+        "name": "service/",
+        "label": "网络请求",
+        "children": [
+          {
+            "name": "api/",
+            "label": "API 接口",
+            "children": [
+              {
+                "name": "auth.ts"
+              },
+              {
+                "name": "index.ts"
+              },
+              {
+                "name": "management.adapter.ts"
+              },
+              {
+                "name": "management.ts"
+              }
+            ]
+          },
+          {
+            "name": "request/",
+            "label": "封装的请求函数",
+            "children": [
+              {
+                "name": "helpers.ts"
+              },
+              {
+                "name": "index.ts"
+              },
+              {
+                "name": "instance.ts"
+              },
+              {
+                "name": "request.ts"
+              }
+            ]
+          },
+          {
+            "name": "index.ts"
+          }
+        ]
+      },
+      {
+        "name": "settings/",
+        "label": "项目初始配置",
+        "children": [
+          {
+            "name": "color.json"
+          },
+          {
+            "name": "color.ts",
+            "label": "颜色相关配置"
+          },
+          {
+            "name": "index.ts"
+          },
+          {
+            "name": "theme.json"
+          },
+          {
+            "name": "theme.ts",
+            "label": "主题相关配置"
+          }
+        ]
+      },
+      {
+        "name": "store/",
+        "label": "Pinia 状态管理",
+        "children": [
+          {
+            "name": "modules/",
+            "label": "状态管理划分的模块",
+            "children": [
+              {
+                "name": "app/",
+                "label": "App 状态",
+                "note": "页面重载、菜单折叠、项目配置的抽屉",
+                "children": [
+                  {
+                    "name": "index.ts"
+                  }
+                ]
+              },
+              {
+                "name": "auth/",
+                "label": "Auth 状态",
+                "note": "用户信息、用户权限",
+                "children": [
+                  {
+                    "name": "helpers.ts"
+                  },
+                  {
+                    "name": "index.ts"
+                  }
+                ]
+              },
+              {
+                "name": "route/",
+                "label": "Route 状态",
+                "note": "动态路由、菜单、路由缓存",
+                "children": [
+                  {
+                    "name": "index.ts"
+                  }
+                ]
+              },
+              {
+                "name": "setup-store/",
+                "label": "setup-store 示例",
+                "children": [
+                  {
+                    "name": "index.ts"
+                  }
+                ]
+              },
+              {
+                "name": "tab/",
+                "label": "Tab 状态",
+                "note": "多页签、缓存页面的滚动位置",
+                "children": [
+                  {
+                    "name": "helpers.ts"
+                  },
+                  {
+                    "name": "index.ts"
+                  }
+                ]
+              },
+              {
+                "name": "theme/",
+                "label": "Theme 状态",
+                "note": "项目主题配置",
+                "children": [
+                  {
+                    "name": "helpers.ts"
+                  },
+                  {
+                    "name": "index.ts"
+                  }
+                ]
+              },
+              {
+                "name": "index.ts"
+              }
+            ]
+          },
+          {
+            "name": "plugins/",
+            "label": "状态管理插件",
+            "children": [
+              {
+                "name": "index.ts"
+              }
+            ]
+          },
+          {
+            "name": "subscribe/",
+            "label": "订阅状态",
+            "note": "状态变更后执行一些操作",
+            "children": [
+              {
+                "name": "app.ts",
+                "label": "订阅 App 的状态",
+                "note": "配置弹窗打开时禁用 body 的滚动"
+              },
+              {
+                "name": "index.ts",
+                "label": "入口文件"
+              },
+              {
+                "name": "theme.ts",
+                "label": "订阅 Theme 的状态",
+                "note": "主题颜色变更、暗黑模式变更、页面横向滚动"
+              }
+            ]
+          },
+          {
+            "name": "index.ts"
+          }
+        ]
+      },
+      {
+        "name": "styles/",
+        "label": "样式",
+        "children": [
+          {
+            "name": "css/",
+            "label": "CSS",
+            "children": [
+              {
+                "name": "global.css"
+              },
+              {
+                "name": "reset.css"
+              },
+              {
+                "name": "transition.css"
+              }
+            ]
+          },
+          {
+            "name": "scss/",
+            "label": "SCSS",
+            "children": [
+              {
+                "name": "global.scss"
+              },
+              {
+                "name": "scrollbar.scss"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "typings/",
+        "label": "TypeScript 声明文件（*.d.ts）",
+        "children": [
+          {
+            "name": "api.d.ts",
+            "label": "请求接口返回的数据的类型声明"
+          },
+          {
+            "name": "business.d.ts",
+            "label": "业务相关的类型声明"
+          },
+          {
+            "name": "components.d.ts",
+            "label": "（自动生成）组件相关的类型声明"
+          },
+          {
+            "name": "env.d.ts",
+            "label": "Vue 路由描述和请求环境相关的类型声明"
+          },
+          {
+            "name": "expose.d.ts",
+            "label": "暴露给全局的类型声明"
+          },
+          {
+            "name": "global.d.ts",
+            "label": "全局通用类型"
+          },
+          {
+            "name": "naive-ui.d.ts",
+            "label": "Naive UI 组件的类型声明"
+          },
+          {
+            "name": "package.d.ts",
+            "label": "第三方依赖包的类型声明"
+          },
+          {
+            "name": "page-route.d.ts",
+            "label": "（自动生成）页面路由类型声明",
+            "note": "插件 @soybeanjs/vite-plugin-vue-page-route 生成的路由声明"
+          },
+          {
+            "name": "route.d.ts",
+            "label": "路由系统的类型声明"
+          },
+          {
+            "name": "router.d.ts",
+            "label": "Vue 的路由描述的类型声明"
+          },
+          {
+            "name": "storage.d.ts",
+            "label": "本地缓存的数据类型"
+          },
+          {
+            "name": "system.d.ts",
+            "label": "系统的类型声明"
+          },
+          {
+            "name": "union-key.d.ts",
+            "label": "联合类型"
+          },
+          {
+            "name": "utils.d.ts",
+            "label": "类型工具合集"
+          }
+        ]
+      },
+      {
+        "name": "utils/",
+        "label": "工具函数（纯函数）",
+        "children": [
+          {
+            "name": "common/",
+            "label": "通用工具函数",
+            "children": [
+              {
+                "name": "color.ts"
+              },
+              {
+                "name": "index.ts"
+              },
+              {
+                "name": "number.ts"
+              },
+              {
+                "name": "pattern.ts"
+              },
+              {
+                "name": "typeof.ts"
+              }
+            ]
+          },
+          {
+            "name": "crypto/",
+            "label": "加密工具函数",
+            "children": [
+              {
+                "name": "index.ts"
+              }
+            ]
+          },
+          {
+            "name": "form/",
+            "label": "表单工具函数",
+            "children": [
+              {
+                "name": "index.ts"
+              },
+              {
+                "name": "rule.ts"
+              }
+            ]
+          },
+          {
+            "name": "router/",
+            "label": "路由工具函数",
+            "children": [
+              {
+                "name": "auth.ts"
+              },
+              {
+                "name": "breadcrumb.ts"
+              },
+              {
+                "name": "cache.ts"
+              },
+              {
+                "name": "component.ts"
+              },
+              {
+                "name": "helpers.ts"
+              },
+              {
+                "name": "index.ts"
+              },
+              {
+                "name": "menu.ts"
+              },
+              {
+                "name": "module.ts"
+              },
+              {
+                "name": "regexp.ts"
+              },
+              {
+                "name": "transform.ts"
+              }
+            ]
+          },
+          {
+            "name": "service/",
+            "label": "请求相关工具函数",
+            "children": [
+              {
+                "name": "error.ts"
+              },
+              {
+                "name": "handler.ts"
+              },
+              {
+                "name": "index.ts"
+              },
+              {
+                "name": "msg.ts"
+              },
+              {
+                "name": "transform.ts"
+              }
+            ]
+          },
+          {
+            "name": "storage/",
+            "label": "存储相关工具函数",
+            "children": [
+              {
+                "name": "index.ts"
+              },
+              {
+                "name": "local.ts"
+              },
+              {
+                "name": "session.ts"
+              }
+            ]
+          },
+          {
+            "name": "index.ts"
+          }
+        ]
+      },
+      {
+        "name": "views/",
+        "label": "页面组件",
+        "children": [
+          {
+            "name": "_builtin/",
+            "label": "内置页面（登录、异常页等）",
+            "children": [
+              {
+                "name": "403/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "404/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "500/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "constant-page/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "login/",
+                "children": [
+                  {
+                    "name": "components/",
+                    "children": [
+                      {
+                        "name": "bind-wechat/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "code-login/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "login-bg/",
+                        "children": [
+                          {
+                            "name": "components/",
+                            "children": [
+                              {
+                                "name": "corner-bottom.vue"
+                              },
+                              {
+                                "name": "corner-top.vue"
+                              },
+                              {
+                                "name": "index.ts"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "pwd-login/",
+                        "children": [
+                          {
+                            "name": "components/",
+                            "children": [
+                              {
+                                "name": "index.ts"
+                              },
+                              {
+                                "name": "other-account.vue"
+                              },
+                              {
+                                "name": "other-login.vue"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "register-user/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "reset-pwd/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "index.ts"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "not-found/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "about/",
+            "label": "关于",
+            "children": [
+              {
+                "name": "components/",
+                "children": [
+                  {
+                    "name": "dev-dependency.vue"
+                  },
+                  {
+                    "name": "index.ts"
+                  },
+                  {
+                    "name": "model.ts"
+                  },
+                  {
+                    "name": "pro-dependency.vue"
+                  },
+                  {
+                    "name": "project-info.vue"
+                  },
+                  {
+                    "name": "project-introduction.vue"
+                  }
+                ]
+              },
+              {
+                "name": "index.vue"
+              }
+            ]
+          },
+          {
+            "name": "auth-demo/",
+            "label": "权限示例",
+            "children": [
+              {
+                "name": "permission/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "super/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "component/",
+            "label": "组件示例",
+            "children": [
+              {
+                "name": "button/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "card/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "table/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "dashboard/",
+            "label": "仪表盘",
+            "children": [
+              {
+                "name": "analysis/",
+                "children": [
+                  {
+                    "name": "components/",
+                    "children": [
+                      {
+                        "name": "bottom-part/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "data-card/",
+                        "children": [
+                          {
+                            "name": "components/",
+                            "children": [
+                              {
+                                "name": "gradient-bg.vue"
+                              },
+                              {
+                                "name": "index.ts"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "top-chart/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "index.ts"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "workbench/",
+                "label": "工作台",
+                "children": [
+                  {
+                    "name": "components/",
+                    "children": [
+                      {
+                        "name": "workbench-header/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "workbench-main/",
+                        "children": [
+                          {
+                            "name": "components/",
+                            "children": [
+                              {
+                                "name": "index.ts"
+                              },
+                              {
+                                "name": "shortcuts-card.vue"
+                              },
+                              {
+                                "name": "technology-card.vue"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "index.ts"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "document/",
+            "label": "文档",
+            "children": [
+              {
+                "name": "naive/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "project/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "project-link/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "vite/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "vue/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "exception/",
+            "label": "异常页",
+            "children": [
+              {
+                "name": "403/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "404/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "500/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "function/",
+            "label": "功能页",
+            "children": [
+              {
+                "name": "tab/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "tab-detail/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "tab-multi-detail/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "management/",
+            "label": "管理页",
+            "children": [
+              {
+                "name": "auth/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "role/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "route/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "user/",
+                "children": [
+                  {
+                    "name": "components/",
+                    "children": [
+                      {
+                        "name": "column-setting.vue"
+                      },
+                      {
+                        "name": "table-action-modal.vue"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "multi-menu/",
+            "label": "多级菜单",
+            "children": [
+              {
+                "name": "first/",
+                "children": [
+                  {
+                    "name": "second/",
+                    "children": [
+                      {
+                        "name": "index.vue"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "second-new/",
+                    "children": [
+                      {
+                        "name": "third/",
+                        "children": [
+                          {
+                            "name": "index.vue"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "plugin/",
+            "label": "插件",
+            "children": [
+              {
+                "name": "charts/",
+                "children": [
+                  {
+                    "name": "antv/",
+                    "children": [
+                      {
+                        "name": "index.vue"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "echarts/",
+                    "children": [
+                      {
+                        "name": "index.vue"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "copy/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "editor/",
+                "children": [
+                  {
+                    "name": "markdown/",
+                    "children": [
+                      {
+                        "name": "index.vue"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "quill/",
+                    "children": [
+                      {
+                        "name": "index.vue"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "icon/",
+                "children": [
+                  {
+                    "name": "icons.ts"
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "map/",
+                "children": [
+                  {
+                    "name": "components/",
+                    "children": [
+                      {
+                        "name": "baidu-map.vue"
+                      },
+                      {
+                        "name": "gaode-map.vue"
+                      },
+                      {
+                        "name": "index.ts"
+                      },
+                      {
+                        "name": "tencent-map.vue"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "print/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "swiper/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              },
+              {
+                "name": "video/",
+                "children": [
+                  {
+                    "name": "index.vue"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "index.ts"
+          }
+        ]
+      },
+      {
+        "name": "App.vue",
+        "label": "Vue 入口文件"
+      },
+      {
+        "name": "main.ts",
+        "label": "项目入口文件"
+      }
+    ]
+  },
+  {
+    "name": ".editorconfig",
+    "label": "编辑器配置文件",
+    "note": "EditorConfig 帮助开发人员在不同的 IDE 中为同一项目工作时保持一致的编码风格"
+  },
+  {
+    "name": ".env",
+    "label": "环境变量配置文件",
+    "note": "用于指定 VITE_APP_TITLE 等环境变量"
+  },
+  {
+    "name": ".env-config.ts",
+    "label": "环境变量配置文件"
+  },
+  {
+    "name": ".env.development",
+    "label": "开发环境变量"
+  },
+  {
+    "name": ".env.production",
+    "label": "生产环境变量"
+  },
+  {
+    "name": ".eslintignore",
+    "label": "ESLint 忽略文件"
+  },
+  {
+    "name": ".eslintrc.js",
+    "label": "ESLint 配置文件"
+  },
+  {
+    "name": ".gitattributes",
+    "label": "Git 属性文件"
+  },
+  {
+    "name": ".gitignore",
+    "label": "Git 忽略文件"
+  },
+  {
+    "name": ".npmrc",
+    "label": "NPM 配置文件"
+  },
+  {
+    "name": "CHANGELOG.md",
+    "label": "变更日志"
+  },
+  {
+    "name": "LICENSE",
+    "label": "MIT License"
+  },
+  {
+    "name": "Makefile",
+    "label": "包含启动命令、Docker 命令"
+  },
+  {
+    "name": "README.md",
+    "label": "项目说明文档"
+  },
+  {
+    "name": "changelogithub.config.json",
+    "label": "changelogithub 配置文件",
+    "note": "配置用于在 GitHub 发布 Release 时生成变更日志"
+  },
+  {
+    "name": "index.html",
+    "label": "HTML 入口文件"
+  },
+  {
+    "name": "package.json",
+    "label": "NPM 包配置文件"
+  },
+  {
+    "name": "pnpm-lock.yaml",
+    "label": "pnpm 锁文件"
+  },
+  {
+    "name": "tsconfig.json",
+    "label": "TypeScript 配置文件"
+  },
+  {
+    "name": "uno.config.ts",
+    "label": "UnoCSS 配置文件"
+  },
+  {
+    "name": "vite.config.ts",
+    "label": "Vite 配置文件"
+  }
+]

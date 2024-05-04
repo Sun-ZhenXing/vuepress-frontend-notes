@@ -1,3 +1,0 @@
-# VueUse Core
-
-<AutoCatalog />
