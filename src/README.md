@@ -11,4 +11,6 @@ heroText: 鸭梨的前端笔记
 tagline: 记录前端学习内容
 ---
 
-<Catalog :level="2" />
+```component Catalog
+level: 2
+```

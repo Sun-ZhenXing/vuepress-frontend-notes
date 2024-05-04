@@ -1,3 +1,5 @@
 # 笔记本 JS 部分
 
-<Catalog />
+```component Catalog
+{}
+```

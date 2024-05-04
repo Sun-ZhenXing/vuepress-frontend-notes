@@ -2,7 +2,6 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { slug as slugify } from 'github-slugger'
 import { defineUserConfig } from 'vuepress'
 import { getDirname, path } from 'vuepress/utils'
-import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 
 import theme from './theme'
 import { config } from '../../config'

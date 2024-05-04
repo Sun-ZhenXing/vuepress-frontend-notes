@@ -1,4 +1,6 @@
-function debounce(func, wait, immediate) {
+/* eslint-disable ts/no-this-alias */
+/* eslint-disable prefer-rest-params */
+export function debounce(func, wait, immediate) {
   let timeout, result
   const debounced = function () {
     const context = this

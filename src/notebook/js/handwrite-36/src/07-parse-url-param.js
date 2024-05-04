@@ -1,7 +1,8 @@
+/* eslint-disable no-prototype-builtins */
 /**
  * @param {string} url
  */
-function parseParam(url) {
+export function parseParam(url) {
   const paramsStr = /.+\?(.+)$/.exec(url)[1] // 将 ? 后面的字符串取出来
   const paramsArr = paramsStr.split('&') // 将字符串以 & 分割后存到数组中
   const paramsObj = {}
@@ -10,7 +11,7 @@ function parseParam(url) {
     if (/=/.test(param)) { // 处理有 value 的参数
       const [key, val_encoded] = param.split('=') // 分割 key 和 value
       const val_decoded = decodeURIComponent(val_encoded) // 解码
-      const val = /^\d+$/.test(val) ? Number.parseFloat(val_decoded) : val_decoded // 判断是否转为数字
+      const val = /^\d+$/.test(val_decoded) ? Number.parseFloat(val_decoded) : val_decoded // 判断是否转为数字
       if (paramsObj.hasOwnProperty(key)) { // 如果对象有 key，则添加一个值
         paramsObj[key].push(val)
       }

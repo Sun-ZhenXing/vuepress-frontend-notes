@@ -1,4 +1,4 @@
-class Promise {
+export class Promise {
   constructor(executor) {
     this.state = 'pending'
     this.value = undefined
@@ -31,7 +31,11 @@ class Promise {
     // onFulfilled 如果不是函数，就忽略 onFulfilled，直接返回 value
     onFulfilled = typeof onFulfilled === 'function' ? onFulfilled : value => value
     // onRejected 如果不是函数，就忽略 onRejected，直接扔出错误
-    onRejected = typeof onRejected === 'function' ? onRejected : (err) => { throw err }
+    onRejected = typeof onRejected === 'function'
+      ? onRejected
+      : (err) => {
+          throw err
+        }
     const promise2 = new Promise((resolve, reject) => {
       if (this.state === 'fulfilled') {
         // 异步

@@ -1,3 +1,5 @@
 # HTML
 
-<Catalog />
+```component Catalog
+{}
+```

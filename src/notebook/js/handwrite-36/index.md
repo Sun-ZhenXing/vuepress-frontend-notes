@@ -4,4 +4,6 @@
 
 本系列所有的源代码可参见 [Sun-ZhenXing/vuepress-frontend-notes](https://github.com/Sun-ZhenXing/vuepress-frontend-notes/tree/main/docs/notebook/js/handwrite-36/src)。
 
-<Catalog />
+```component Catalog
+{}
+```

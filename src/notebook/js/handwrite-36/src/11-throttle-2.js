@@ -1,8 +1,10 @@
+/* eslint-disable ts/no-this-alias */
+/* eslint-disable prefer-rest-params */
 /**
  * @param {Function} func
  * @param {number} wait
  */
-function throttle(func, wait) {
+export function throttle(func, wait) {
   // 采用定时器
   let timer = null
   return function () {

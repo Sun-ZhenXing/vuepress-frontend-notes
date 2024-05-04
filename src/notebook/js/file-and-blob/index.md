@@ -1,3 +1,5 @@
 # File 和 Blob
 
-<Catalog />
+```component Catalog
+{}
+```

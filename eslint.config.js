@@ -30,7 +30,9 @@ export default antfu(
   {
     rules: {
       'import/order': 'off',
+      'no-console': 'off',
       'perfectionist/sort-imports': 'off',
+      'perfectionist/sort-vue-attributes': 'off',
     },
   },
 )

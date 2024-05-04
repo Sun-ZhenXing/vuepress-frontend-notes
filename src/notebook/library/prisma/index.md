@@ -1,3 +1,5 @@
 # Prisma
 
-<Catalog />
+```component Catalog
+{}
+```

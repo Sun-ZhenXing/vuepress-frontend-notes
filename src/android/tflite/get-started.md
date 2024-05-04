@@ -54,7 +54,7 @@ private val flowerModel: FlowerModel by lazy {
 如果此时正在使用 GPU 推理，控制台能看到日志。如果出现下面的日志
 
 ```console
-D/TFL Classify: This device is GPU Incompatible
+D/TFL Classify: This device is GPU Incompatible
 ```
 
 则是 GPU 不兼容，可能是手机的兼容性或版本的兼容性不足。

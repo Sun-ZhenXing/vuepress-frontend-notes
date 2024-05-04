@@ -9,7 +9,7 @@ resolvePromise.then(() => {
   console.log('resolvePromise resolved')
 })
 
-const resolvedPromiseThen = Promise.resolve().then((res) => {
+const resolvedPromiseThen = Promise.resolve().then(() => {
   console.log('promise1')
 })
 

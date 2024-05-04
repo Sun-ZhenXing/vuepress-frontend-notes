@@ -1,4 +1,4 @@
-function getJSON(url) {
+export function getJSON(url) {
   return new Promise((resolve, reject) => {
     const xhr = XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP')
     xhr.open('GET', url, false)

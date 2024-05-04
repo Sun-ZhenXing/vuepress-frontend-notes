@@ -17,7 +17,7 @@ function testTypeOf() {
     regexp: new RegExp(),
     set: new Set(),
     string: '1',
-    symbol: Symbol(),
+    symbol: Symbol(0),
     undefined,
   }
   for (const key in tests) {

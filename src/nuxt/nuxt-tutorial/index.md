@@ -1,3 +1,5 @@
 # Nuxt3 教程
 
-<Catalog />
+```component Catalog
+{}
+```

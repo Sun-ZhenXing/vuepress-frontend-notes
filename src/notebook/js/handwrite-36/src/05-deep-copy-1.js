@@ -1,4 +1,5 @@
-function shallowCopy(obj) {
+/* eslint-disable no-prototype-builtins */
+export function shallowCopy(obj) {
   if (typeof obj !== 'object')
     return
 
@@ -10,7 +11,7 @@ function shallowCopy(obj) {
   return newObj
 }
 
-function deepClone(obj) {
+export function deepClone(obj) {
   if (typeof obj !== 'object')
     return
   const newObj = Array.isArray(obj) ? [] : {}

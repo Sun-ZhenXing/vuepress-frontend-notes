@@ -3,7 +3,7 @@
 // x 的类型不是函数也不是 Object，那么就直接进入 resolve
 // 否则的话，判断 x的 then 类型，如果为函数，那么一定是 Promise，然后判断这个时成功还是失败
 // 否则的话，直接 resolve
-const resolvePromise = function (Promise2, x, resolve, reject) {
+export const resolvePromise = function (Promise2, x, resolve, reject) {
   if (x === Promise2) {
     // 直接报错
     return reject(new TypeError('Chaining cycle detected for promise'))

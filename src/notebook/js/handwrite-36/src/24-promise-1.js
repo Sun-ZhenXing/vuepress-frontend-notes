@@ -1,5 +1,5 @@
 // 首先是不考虑异步情况的话
-class Promise {
+export class Promise {
   constructor(executor) {
     this.state = 'pending'
     this.value = undefined

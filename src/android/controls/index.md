@@ -1,3 +1,5 @@
 # Android 控件
 
-<Catalog />
+```component Catalog
+{}
+```

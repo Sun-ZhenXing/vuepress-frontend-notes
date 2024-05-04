@@ -1,3 +1,5 @@
 # VueUse Core
 
-<Catalog />
+```component Catalog
+{}
+```

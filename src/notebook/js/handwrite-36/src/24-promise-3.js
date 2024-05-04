@@ -1,5 +1,5 @@
 // 解决链式调用，也就是第一次 then 的返回值是一个 Promise 对象
-class Promise {
+export class Promise {
   constructor(excutor) {
     this.state = 'pending'
     this.value = undefined

@@ -1,3 +1,5 @@
+/* eslint-disable ts/no-this-alias */
+/* eslint-disable prefer-rest-params */
 /**
  * @param {Function} func
  * @param {number} wait

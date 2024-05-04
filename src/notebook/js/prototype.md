@@ -39,6 +39,6 @@ classDiagram
 
 - `prototype` 是每个函数都拥有的属性，这个函数创建对象时将_个对象作为原型
 - `__pro  o ructor  _` 指向对象的原型对象，原型对象通常和被 `new` 的对象结构一致
-    - `constructor` 指向构造该对象的函数
+  - `constructor` 指向构造该对象的函数
 - `a1.constructor === f`
 - `a1.__proto__ === f.prototype`

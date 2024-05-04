@@ -1,3 +1,5 @@
 # 杂项
 
-<Catalog />
+```component Catalog
+{}
+```

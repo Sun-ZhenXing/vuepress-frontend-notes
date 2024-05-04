@@ -1,5 +1,5 @@
 // 考虑异步情况的 Promise
-class Promise {
+export class Promise {
   constructor(excutor) {
     // 状态
     this.state = 'pending'

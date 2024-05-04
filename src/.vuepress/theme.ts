@@ -35,6 +35,59 @@ export default hopeTheme({
     copyCode: {
       showInMobile: true,
     },
+    // 搜索
+    docsearch: {
+      apiKey: '3b6438cb1895eff367c5c84c8fa50383',
+      appId: 'DF0MWQNCKW',
+      indexName: 'alexsun_blog',
+      locales: {
+        '/': {
+          placeholder: '搜索文档',
+          translations: {
+            button: {
+              buttonAriaLabel: '搜索文档',
+              buttonText: '搜索文档',
+            },
+            modal: {
+              errorScreen: {
+                helpText: '你可能需要检查你的网络连接',
+                titleText: '无法获取结果',
+              },
+              footer: {
+                closeText: '关闭',
+                navigateText: '切换',
+                searchByText: '搜索提供者',
+                selectText: '选择',
+              },
+              noResultsScreen: {
+                noResultsText: '无法找到相关结果',
+                reportMissingResultsLinkText: '点击反馈',
+                reportMissingResultsText: '你认为该查询应该有结果？',
+                suggestedQueryText: '你可以尝试查询',
+              },
+              searchBox: {
+                cancelButtonAriaLabel: '取消',
+                cancelButtonText: '取消',
+                resetButtonAriaLabel: '清除查询条件',
+                resetButtonTitle: '清除查询条件',
+              },
+              startScreen: {
+                favoriteSearchesTitle: '收藏',
+                noRecentSearchesText: '没有搜索历史',
+                recentSearchesTitle: '搜索历史',
+                removeFavoriteSearchButtonTitle: '从收藏中移除',
+                removeRecentSearchButtonTitle: '从搜索历史中移除',
+                saveRecentSearchButtonTitle: '保存至搜索历史',
+              },
+            },
+          },
+        },
+      },
+      placeholder: '搜索文档',
+      searchParameters: {
+        facetFilters: ['tags:frontend'],
+      },
+    },
     mdEnhance: {
       // GFM 警告
       alert: true,
@@ -174,59 +227,6 @@ export default hopeTheme({
       vPre: true,
       // Vue Playground
       vuePlayground: false,
-    },
-    // 搜索
-    docsearch: {
-      apiKey: '3b6438cb1895eff367c5c84c8fa50383',
-      appId: 'DF0MWQNCKW',
-      indexName: 'alexsun_blog',
-      locales: {
-        '/': {
-          placeholder: '搜索文档',
-          translations: {
-            button: {
-              buttonAriaLabel: '搜索文档',
-              buttonText: '搜索文档',
-            },
-            modal: {
-              errorScreen: {
-                helpText: '你可能需要检查你的网络连接',
-                titleText: '无法获取结果',
-              },
-              footer: {
-                closeText: '关闭',
-                navigateText: '切换',
-                searchByText: '搜索提供者',
-                selectText: '选择',
-              },
-              noResultsScreen: {
-                noResultsText: '无法找到相关结果',
-                reportMissingResultsLinkText: '点击反馈',
-                reportMissingResultsText: '你认为该查询应该有结果？',
-                suggestedQueryText: '你可以尝试查询',
-              },
-              searchBox: {
-                cancelButtonAriaLabel: '取消',
-                cancelButtonText: '取消',
-                resetButtonAriaLabel: '清除查询条件',
-                resetButtonTitle: '清除查询条件',
-              },
-              startScreen: {
-                favoriteSearchesTitle: '收藏',
-                noRecentSearchesText: '没有搜索历史',
-                recentSearchesTitle: '搜索历史',
-                removeFavoriteSearchButtonTitle: '从收藏中移除',
-                removeRecentSearchButtonTitle: '从搜索历史中移除',
-                saveRecentSearchButtonTitle: '保存至搜索历史',
-              },
-            },
-          },
-        },
-      },
-      placeholder: '搜索文档',
-      searchParameters: {
-        facetFilters: ['tags:frontend'],
-      },
     },
   },
   repo: config.repo,

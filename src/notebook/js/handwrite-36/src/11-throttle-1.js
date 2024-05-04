@@ -1,8 +1,10 @@
+/* eslint-disable prefer-rest-params */
+/* eslint-disable ts/no-this-alias */
 /**
  * @param {Function} func
  * @param {number} wait
  */
-function throttle(func, wait) {
+export function throttle(func, wait) {
   let previous = 0
   return function () {
     const now = new Date().getTime()

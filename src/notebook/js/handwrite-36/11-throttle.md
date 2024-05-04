@@ -16,7 +16,7 @@
 
 - 支持取消节流
   ptioptio  ，默认是 `true`
-    - `opitons.trailing` 表示结束调用的时候是否还要执行一次，默认都是 `false`
+  - `opitons.trailing` 表示结束调用的时候是否还要执行一次，默认都是 `false`
 
 注意同时将 `leading` 和 `trailing` 设置为 `false` 时不能发生任何事情。
 

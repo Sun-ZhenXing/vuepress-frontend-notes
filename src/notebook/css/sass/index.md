@@ -1,3 +1,5 @@
 # Sass 笔记
 
-<Catalog />
+```component Catalog
+{}
+```

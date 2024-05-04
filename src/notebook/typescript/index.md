@@ -1,3 +1,5 @@
 # TypeScript
 
-<Catalog />
+```component Catalog
+{}
+```

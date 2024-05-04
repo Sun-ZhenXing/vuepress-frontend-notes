@@ -1,4 +1,5 @@
-function jsonp({ callbackName, params, url }) {
+/* eslint-disable no-prototype-builtins */
+export function jsonp({ callbackName, params, url }) {
   const generateUrl = () => {
     let dataSrc = ''
     for (const key in params) {
@@ -8,7 +9,7 @@ function jsonp({ callbackName, params, url }) {
     dataSrc += `callback=${callbackName}`
     return `${url}?${dataSrc}`
   }
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const scriptEle = document.createElement('script')
     scriptEle.src = generateUrl()
     document.body.appendChild(scriptEle)

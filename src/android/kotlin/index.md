@@ -1,3 +1,5 @@
 # Kotlin 语言基础
 
-<Catalog />
+```component Catalog
+{}
+```

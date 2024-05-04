@@ -1,3 +1,5 @@
 # Nuxt 笔记
 
-<Catalog />
+```component Catalog
+{}
+```

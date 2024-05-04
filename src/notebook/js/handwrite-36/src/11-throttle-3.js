@@ -1,9 +1,11 @@
+/* eslint-disable ts/no-this-alias */
+/* eslint-disable prefer-rest-params */
 /**
  * @param {Function} func
  * @param {number} wait
  * @param {{leading?: boolean, trailing?: boolean}?} options
  */
-function throttle(func, wait, options) {
+export function throttle(func, wait, options) {
   let timeout, context, args
   let previous = 0
   if (!options)

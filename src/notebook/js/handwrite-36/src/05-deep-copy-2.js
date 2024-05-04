@@ -1,6 +1,7 @@
+/* eslint-disable no-prototype-builtins */
 const isObject = target => (typeof target === 'object' || typeof target === 'function') && target !== null
 
-function deepClone(target, map = new WeakMap()) {
+export function deepClone(target, map = new WeakMap()) {
   if (map.get(target))
     return target
 
