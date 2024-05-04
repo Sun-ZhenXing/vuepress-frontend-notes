@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-11a70aba","path":"/notebook/typescript/type-challenges/189-awaited.html","title":"189. Awaited","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685192661000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/189-awaited.md"}');export{e as data};

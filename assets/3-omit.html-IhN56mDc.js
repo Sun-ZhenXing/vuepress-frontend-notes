@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-2efbb28a","path":"/notebook/typescript/type-challenges/3-omit.html","title":"3. Omit","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685020995000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/3-omit.md"}');export{t as data};

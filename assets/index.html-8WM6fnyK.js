@@ -1,1 +1,0 @@
-import{_ as a,r as o,o as n,c,a as r,b as e,d as s}from"./app-rPvAhQef.js";const d={},_=e("h1",{id:"nuxt-依赖配置",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#nuxt-依赖配置","aria-hidden":"true"},"#"),s(" Nuxt 依赖配置")],-1);function l(i,u){const t=o("AutoCatalog");return n(),c("div",null,[_,r(t)])}const h=a(d,[["render",l],["__file","index.html.vue"]]);export{h as default};

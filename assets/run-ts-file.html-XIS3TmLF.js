@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-41e9205c","path":"/notebook/js/run-ts-file.html","title":"直接运行 TypeScript 文件","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681297284000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/js/run-ts-file.md"}');export{t as data};

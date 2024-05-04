@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-c94c2490","path":"/notebook/typescript/type-challenges/14-first.html","title":"14. First","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685192661000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/14-first.md"}');export{t as data};

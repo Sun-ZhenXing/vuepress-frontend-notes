@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-5202c06c","path":"/notebook/typescript/type-challenges/3057-push.html","title":"3057. Push","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685192661000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/3057-push.md"}');export{e as data};

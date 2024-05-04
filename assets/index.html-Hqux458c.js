@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-4331cac0","path":"/android/controls/","title":"Android 控件","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":2}]},"filePathRelative":"android/controls/index.md"}');export{t as data};

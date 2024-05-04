@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-2e7c0376","path":"/notebook/js/handwrite-36/18-implement-new.html","title":"18. 实现 new","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":2}]},"filePathRelative":"notebook/js/handwrite-36/18-implement-new.md"}');export{e as data};

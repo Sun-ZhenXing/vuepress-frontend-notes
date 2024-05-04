@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-1ddba992","path":"/notebook/typescript/type-challenges/116-replace.html","title":"116. Replace","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685259723000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/116-replace.md"}');export{e as data};

@@ -1,1 +1,0 @@
-import{_ as t,o,c as n,b as e,d as c}from"./app-rPvAhQef.js";const a={},r=e("h1",{id:"17-实现函数原型方法",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#17-实现函数原型方法","aria-hidden":"true"},"#"),c(" 17. 实现函数原型方法")],-1),s=[r];function _(d,i){return o(),n("div",null,s)}const l=t(a,[["render",_],["__file","17-implement-function-prototype-method.html.vue"]]);export{l as default};

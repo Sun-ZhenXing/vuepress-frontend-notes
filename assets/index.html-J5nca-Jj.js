@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-15081a33","path":"/nuxt/","title":"Nuxt 笔记","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681201278000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"nuxt/index.md"}');export{t as data};

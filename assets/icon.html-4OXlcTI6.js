@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-027875a2","path":"/nuxt/dependency-config/icon.html","title":"图标库","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1699515127000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"nuxt/dependency-config/icon.md"}');export{e as data};

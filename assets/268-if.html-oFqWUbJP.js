@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-0160f730","path":"/notebook/typescript/type-challenges/268-if.html","title":"268. If","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685192661000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/268-if.md"}');export{e as data};

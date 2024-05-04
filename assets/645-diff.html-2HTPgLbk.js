@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-32deda83","path":"/notebook/typescript/type-challenges/645-diff.html","title":"645. Diff","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685756058000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"notebook/typescript/type-challenges/645-diff.md"}');export{e as data};

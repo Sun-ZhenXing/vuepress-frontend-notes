@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-28833795","path":"/android/kotlin/","title":"Kotlin 语言基础","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1679236289000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":2}]},"filePathRelative":"android/kotlin/index.md"}');export{t as data};

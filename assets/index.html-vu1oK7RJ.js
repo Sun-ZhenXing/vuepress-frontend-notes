@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-4ea7073a","path":"/nuxt/nuxt-tutorial/","title":"Nuxt3 教程","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681197709000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"nuxt/nuxt-tutorial/index.md"}');export{t as data};
