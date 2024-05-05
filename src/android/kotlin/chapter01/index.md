@@ -17,14 +17,12 @@ Kotlin 可以编译成 Java 字节码，也可以编译成 JavaScript，方便�
 - 互操作性: 充分利用 JVM、Android 和浏览器的现有库。
 - 工具友好: 可用任何 Java IDE 或者使用命令行构建
 
-::: info 重要信息
-
-- [Kotlin 语言官网](https://kotlinlang.org/)
-- [Kotlin 文档](https://kotlinlang.org/docs/getting-started.html)
-- [Kotlin 中文文档](https://book.kotlincn.net/) *@note:推荐*
-- [Kotlin 在线运行工具](https://play.kotlinlang.org/) *@note:推荐*
-
-:::
+> [!TIP]
+>
+> - [Kotlin 语言官网](https://kotlinlang.org/)
+> - [Kotlin 文档](https://kotlinlang.org/docs/getting-started.html)
+> - [Kotlin 中文文档](https://book.kotlincn.net/)
+> - [Kotlin 在线运行工具](https://play.kotlinlang.org/)
 
 ## 1.2 开发环境
 
@@ -110,5 +108,5 @@ folders?.forEach { folder -> println(folder) }
 注意脚本文件后缀为 `.kts`，需要使用 `-script` 参数，执行命令：
 
 ```bash
-kotlinc -script list_folders.kts <path_to_folder>
+kotlinc -script list_folders.kts $PATH_TO_FOLDER
 ```
