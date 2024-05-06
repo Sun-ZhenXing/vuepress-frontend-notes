@@ -29,6 +29,9 @@ importers:
       '@vuepress/plugin-docsearch':
         specifier: 2.0.0-rc.26
         version: 2.0.0-rc.26(@algolia/client-search@4.23.3)(search-insights@2.13.0)(typescript@5.3.3)(vuepress@2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9(@types/node@20.12.8)(sass@1.76.0)(typescript@5.3.3))(typescript@5.3.3)(vue@3.4.26(typescript@5.3.3)))
+      '@vuepress/plugin-shiki':
+        specifier: 2.0.0-rc.25
+        version: 2.0.0-rc.25(vuepress@2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9(@types/node@20.12.8)(sass@1.76.0)(typescript@5.3.3))(typescript@5.3.3)(vue@3.4.26(typescript@5.3.3)))
       echarts:
         specifier: ^5.5.0
         version: 5.5.0
@@ -771,6 +774,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@shikijs/core@1.4.0':
+    resolution: {integrity: sha512-CxpKLntAi64h3j+TwWqVIQObPTED0FyXLHTTh3MKXtqiQNn2JGcMQQ362LftDbc9kYbDtrksNMNoVmVXzKFYUQ==}
+
   '@sindresorhus/merge-streams@2.3.0':
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
@@ -1251,6 +1257,11 @@ packages:
 
   '@vuepress/plugin-seo@2.0.0-rc.26':
     resolution: {integrity: sha512-V8GVPz6PlKXIHNjPlGpTzokO4mmxIaWkCDHQO/zexP9bIjad+oi8m/UL32hwisw42aEyLBAr13l3pRV6HGwgCg==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.9
+
+  '@vuepress/plugin-shiki@2.0.0-rc.25':
+    resolution: {integrity: sha512-PDWswqtwqGcLy2eLcjawnWWB1sn3JEYXVDjrgWBm2t1zsNi6Hy34b1BgYku06T0gPFzHVTv1L0UMWyB0y2ovDw==}
     peerDependencies:
       vuepress: 2.0.0-rc.9
 
@@ -2992,6 +3003,9 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
+  shiki@1.4.0:
+    resolution: {integrity: sha512-5WIn0OL8PWm7JhnTwRWXniy6eEDY234mRrERVlFa646V2ErQqwIFd2UML7e0Pq9eqSKLoMa3Ke+xbsF+DAuy+Q==}
+
   signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
 
@@ -4140,6 +4154,8 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.17.2':
     optional: true
 
+  '@shikijs/core@1.4.0': {}
+
   '@sindresorhus/merge-streams@2.3.0': {}
 
   '@stackblitz/sdk@1.9.0': {}
@@ -4857,6 +4873,11 @@ snapshots:
       vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9(@types/node@20.12.8)(sass@1.76.0)(typescript@5.3.3))(typescript@5.3.3)(vue@3.4.26(typescript@5.3.3))
     transitivePeerDependencies:
       - typescript
+
+  '@vuepress/plugin-shiki@2.0.0-rc.25(vuepress@2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9(@types/node@20.12.8)(sass@1.76.0)(typescript@5.3.3))(typescript@5.3.3)(vue@3.4.26(typescript@5.3.3)))':
+    dependencies:
+      shiki: 1.4.0
+      vuepress: 2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9(@types/node@20.12.8)(sass@1.76.0)(typescript@5.3.3))(typescript@5.3.3)(vue@3.4.26(typescript@5.3.3))
 
   '@vuepress/plugin-sitemap@2.0.0-rc.26(typescript@5.3.3)(vuepress@2.0.0-rc.9(@vuepress/bundler-vite@2.0.0-rc.9(@types/node@20.12.8)(sass@1.76.0)(typescript@5.3.3))(typescript@5.3.3)(vue@3.4.26(typescript@5.3.3)))':
     dependencies:
@@ -6836,6 +6857,10 @@ snapshots:
       shebang-regex: 3.0.0
 
   shebang-regex@3.0.0: {}
+
+  shiki@1.4.0:
+    dependencies:
+      '@shikijs/core': 1.4.0
 
   signal-exit@3.0.7: {}
 

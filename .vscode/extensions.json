@@ -3,7 +3,6 @@
     "yzhang.markdown-all-in-one",
     "vstirbu.vscode-mermaid-preview",
     "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
-    "bierner.markdown-mermaid",
-    "DavidAnson.vscode-markdownlint"
+    "bierner.markdown-mermaid"
   ]
 }

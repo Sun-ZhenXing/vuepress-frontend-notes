@@ -140,6 +140,8 @@ export default hopeTheme({
       markmap: true,
       // Mermaid
       mermaid: true,
+      // PlantUML
+      plantuml: true,
       // 幻灯片
       revealJs: true,
       // 风格化

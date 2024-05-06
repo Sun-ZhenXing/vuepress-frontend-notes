@@ -2,6 +2,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { slug as slugify } from 'github-slugger'
 import { defineUserConfig } from 'vuepress'
 import { getDirname, path } from 'vuepress/utils'
+import { shikiPlugin } from '@vuepress/plugin-shiki'
 
 import theme from './theme'
 import { config } from '../../config'
@@ -33,7 +34,7 @@ export default defineUserConfig({
       slugify,
     },
     code: {
-      lineNumbers: 10,
+      lineNumbers: false,
     },
     importCode: {
       handleImportPath: str => str
@@ -41,6 +42,11 @@ export default defineUserConfig({
         .replace(/^@\//, CURRENT_PATH.replace(/(?:|\\|\/)$/, '/')),
     },
   },
+  plugins: [
+    shikiPlugin({
+      theme: 'dark-plus',
+    }),
+  ],
   theme,
   title: config.title,
 })
